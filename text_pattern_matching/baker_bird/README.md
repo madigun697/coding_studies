@@ -17,7 +17,8 @@
     ![aho_corasick_pattern](./aho_corasick_pattern_bb.png)
 
     * Aho-Corasick의 Trie에 따라 Input Text의 모든 Text를 Node 위치로 변경(TA')
-    ![aho_corasick_transform_bb](aho_corasick_transform_bb.png)
+
+    ![aho_corasick_transform_bb](./aho_corasick_transform_bb.png)
 
 * Column에 대한 KMP Algorithm
 
