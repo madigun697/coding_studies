@@ -1,6 +1,7 @@
 import pmat_kmp
 import pmat_aho_corasick
 import pmat_baker_bird
+import pmat_baker_bird_interleave
 
 class KMP:
     def __init__(self, pattern, text):
@@ -56,3 +57,17 @@ class Baker_Bird:
 
     def exist(self):
         return len(self.__result) > 0
+    
+    
+class Baker_Bird_Interleave:
+    def __init__(self, pattern, origin):
+        self._origin = origin
+        self._pattern = pattern
+        self.__result = pmat_baker_bird_interleave.patternSearch(self._origin, self._pattern)
+
+    def result(self):
+        return self.__result
+
+    def exist(self):
+        return len(self.__result) > 0    
+    
