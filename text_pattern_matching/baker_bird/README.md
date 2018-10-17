@@ -96,7 +96,7 @@ for (er, ec) in result:
     * KMP Algorithm과 동일하게 수행되나 j가 Column 의 수만큼 존재 (List, Array 등을 사용하여 관리)
     * j가 KMP_P의 길이만큼 증가하는 경우 KMP_T Iteration의 Index(Row Index)와 KMP 비교의 Iteration(Column Index)를 반환
 
-    ![Baker Bird Interleave J Changing Log](D:/Private/study_algorithm/js_bb_il.png)
+    ![Baker Bird Interleave J Changing Log](./js_bb_il.png)
 
 ### 구현
 
