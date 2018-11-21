@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <style>
+        #container {
+            width: 90%;
+            margin: 0px auto;
+            padding: 20px;
+        }
+
+        #layout-header {
+            margin-bottom: 20px;
+        }
+
+        #layout-hbar {
+            width: 300px;
+            padding: 20px;
+            margin-bottom: 20px;
+            float: left;
+        }
+
+        #layout-output {
+            width: calc(90% - 350px);
+            padding: 20px;
+            margin-bottom: 20px;
+            float: left;
+        }
+
+        #layout-scatter {
+            width: 90%;
+            height: 450px;
+            padding: 20px;
+            margin-bottom: 20px;
+            float: left;
+        }
+
+        .layout-scatter {
+            border: 1px solid #bcbcbc;
+        }
+
+    </style>
+    <style>
+        text {
+            fill: black;
+            font: 11px sans-serif;
+            text-anchor: middle;
+        }
+
+        .cell rect {
+            fill: white;
+        }
+
+        .header rect {
+            fill: white;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="./css/ui.jqgrid-bootstrap.css" />
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/grid.locale-en.js"></script>
+    <script type="text/javascript" src="./js/jquery.jqGrid.min.js"></script>
+    <script>
+        $.jgrid.defaults.width = 1180;
+        $.jgrid.defaults.responsive = true;
+        $.jgrid.defaults.styleUI = 'Bootstrap';
+    </script>
+</head>
+
+<body>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</body>
+<div id='container'>
+    <div id='layout-header'>
+        <center>
+            <h1>Topic Modeling Results</h1>
+        </center>
+    </div>
+    <div id='layout-hbar'>
+        <center>
+            <h2>Choose Topic Cluster</h2>
+            <p>Topic Keywords based on LDA</p>
+        </center>
+        <svg id="hbar_container"></svg>
+    </div>
+    <div id='layout-output'>
+        <div id='layout-scatter'>
+            <div style="width: 33%; height: 100%; float: left">
+                <center>
+                    <h2 style="margin-top: 0px">Model1<br>LDA</h2>
+                    <svg class='layout-scatter' id="scatter_container_lda"></svg>
+                </center>
+            </div>
+            <div style="width: 33%; height: 100%; float: left">
+                <center>
+                    <h2 style="margin-top: 0px">Model2<br>K-Means</h2>
+                    <svg class='layout-scatter' id="scatter_container_km"></svg>
+                </center>
+            </div>
+            <div style="width: 33%; height: 100%; float: left">
+                <center>
+                    <h2 style="margin-top: 0px">Model3<br>Deep Embedding</h2>
+                    <svg class='layout-scatter' id="scatter_container_de"></svg>
+                </center>
+            </div>
+            <center><svg id='scatter_legend'></svg></center>
+        </div>
+        <div id='layout-table'>
+            <table id="jqGrid"></table>
+            <div id="jqGridPager"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var margin = {
+        top: 20,
+        right: 30,
+        bottom: 30,
+        left: 40
+    }
+
+    var hbarCanvas = d3.select("#hbar_container")
+        .attr("width", "90%")
+
+    var ldaScatterCanvas = d3.select("#scatter_container_lda")
+        .attr("width", "300px")
+        .attr("height", "300px")
+
+    var kmeansScatterCanvas = d3.select("#scatter_container_km")
+        .attr("width", "300px")
+        .attr("height", "300px")
+
+    d3.json('./lda/hbar_data.json').then(function (data) {
+        hbarCanvas.attr("height", (125 * (data.labels.length - 1)) + "px")
+
+        topicSeq = 0
+        data.labels.forEach(l => {
+            if (l != 'Default') {
+                initializeHBarChart(data[l], data.max_width, topicSeq++)
+            }
+        });
+    });
+
+    d3.json('./lda/scatter_data.json').then(function (data) {
+        initializeScatterChar(data, 'LDA')
+    });
+
+    d3.json('./km/scatter_data.json').then(function (data) {
+        initializeScatterChar(data, 'KMeans')
+        initializeScatterLegend(data)
+    });
+
+    d3.json('./document_table.json').then(function (data) {
+        initializeTable(data)
+    });
+
+    function initializeHBarChart(barData, max_width, topicSeq) {
+
+        subCanvas = hbarCanvas.append("g")
+            .attr("transform", "translate(" + (margin.left + 20) + "," + (margin.top + topicSeq * 120) + ")")
+        var x = d3.scaleBand()
+            .rangeRound([0, 400])
+            .padding(0.1)
+
+        var y = d3.scaleBand()
+            .rangeRound([0, 100])
+            .padding(0.1)
+
+        y.domain(barData.map(d => d['Term']))
+        x.domain(barData.map(d => d['Freq']))
+
+        subCanvas.append('g')
+            .attr('transform', 'translate(30, 120)')
+
+        subCanvas.append('g')
+            .call(d3.axisLeft(y).tickSize(0))
+            .call(subCanvas => subCanvas.select('.domain').remove())
+            .selectAll('text')
+            .style("text-anchor", "end")
+
+        var hbars = subCanvas.selectAll('.bar')
+            .data(barData, d => d['Term'])
+
+        enteredBars = hbars.enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", 0)
+            .attr("y", function (d, i) {
+                return 3 + 19 * i
+            })
+            .attr("height", y.bandwidth())
+            .attr("width", d => Number(d['Total']) / max_width * 200)
+            .attr("fill", '#A5C9E1')
+
+        enteredBars2 = hbars.enter().append("rect")
+            .attr("class", "bar")
+            .attr("x", 0)
+            .attr("y", function (d, i) {
+                return 3 + 19 * i
+            })
+            .attr("height", y.bandwidth())
+            .attr("width", d => Number(d['Freq']) / max_width * 200)
+            .attr("fill", '#CC4A53')
+
+        var mergedBars = enteredBars
+            .merge(hbars)
+            .transition().duration(1000)
+            .attr("x", 0)
+            .attr("y", function (d, i) {
+                return 3 + 19 * i
+            })
+            .attr("height", y.bandwidth())
+            .attr("width", d => Number(d['Total']) / max_width * 200)
+
+        var mergedBars2 = enteredBars2
+            .merge(hbars)
+            .transition().duration(1000)
+            .attr("x", 0)
+            .attr("y", function (d, i) {
+                return 3 + 19 * i
+            })
+            .attr("height", y.bandwidth())
+            .attr("width", d => Number(d['Freq']) / max_width * 200)
+
+        hbars.exit().remove()
+
+        hbars.selectAll('.domain').remove()
+
+    }
+
+    function initializeScatterLegend(scatterData) {
+        topicCnt = 0
+        scatterData.forEach(d => {
+            if (topicCnt < Number(d.topic)) {
+                topicCnt = d.topic
+            }
+        })
+
+        var cValue = d3.schemeCategory10.slice(0, topicCnt + 1)
+
+        legendSvg = d3.select("#scatter_legend")
+            .attr("width", (100 * (topicCnt + 1) / 2) + "px")
+            .attr("height", "40px")
+
+        // draw legend
+        var legend = legendSvg.selectAll(".legend")
+            .data(cValue)
+            .enter().append("g")
+            .attr("class", "legend")
+            .attr("transform", function (d, i) { return "translate(" + (Math.floor(i / 2) * 100) + "," + (i % 2 * 20) + ")"; });
+        // draw legend colored rectangles
+        legend.append("rect")
+            .attr("x", 5)
+            .attr("width", 18)
+            .attr("height", 18)
+            .style("fill", function (d, i) { return cValue[i] });
+        // draw legend text
+        legend.append("text")
+            .attr("x", 30)
+            .attr("y", 9)
+            .attr("dy", ".35em")
+            .style("text-anchor", "start")
+            .text(function (d, i) { return 'Topic' + (i + 1); })
+
+    }
+
+    function initializeScatterChar(scatterData, method) {
+        // setup x 
+        var xValue = function (d) { return d.plot_x; }, // data -> value
+            xScale = d3.scaleLinear().range([0, 300]), // value -> display
+            xMap = function (d) { return xScale(xValue(d)); }, // data -> display
+            xAxis = d3.axisBottom(xScale).tickSize(0).tickFormat('');
+
+        // setup y
+        var yValue = function (d) { return d.plot_y; }, // data -> value
+            yScale = d3.scaleLinear().range([300, 0]), // value -> display
+            yMap = function (d) { return yScale(yValue(d)); }, // data -> display
+            yAxis = d3.axisLeft(yScale).tickSize(0).tickFormat('');
+
+        var cValue = d3.schemeCategory10
+
+        // don't want dots overlapping axis, so add in buffer to data domain
+        xScale.domain([d3.min(scatterData, xValue) - 1, d3.max(scatterData, xValue) + 1]);
+        yScale.domain([d3.min(scatterData, yValue) - 1, d3.max(scatterData, yValue) + 1]);
+
+        if (method == 'LDA') {
+            canvasSvg = ldaScatterCanvas
+        } else if (method == 'KMeans') {
+            canvasSvg = kmeansScatterCanvas
+        }
+
+        // x-axis
+        canvasSvg.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + 300 + ")")
+            .call(xAxis)
+            .call(canvasSvg => canvasSvg.select('.domain').remove())
+            .append("text")
+            .attr("class", "label")
+            .attr("x", 300)
+            .attr("y", -6)
+            .style("text-anchor", "end");
+
+        // y-axis
+        canvasSvg.append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .call(canvasSvg => canvasSvg.select('.domain').remove())
+            .append("text")
+            .attr("class", "label")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 6)
+            .attr("dy", ".71em")
+            .style("text-anchor", "end");
+
+        // draw dots
+        canvasSvg.selectAll(".dot")
+            .data(scatterData)
+            .enter().append("circle")
+            .attr("class", "dot")
+            .attr("r", 3.5)
+            .attr("cx", xMap)
+            .attr("cy", yMap)
+            .style("fill", function (d) { return cValue[d.topic]; });
+    }
+
+    function initializeTable(data) {
+        var columns = ['document', 'topic_lda', 'topic_km'];
+        var columnLabels = ['Document', 'Topic(LDA)', 'Topic(KM)'];
+        var colw = [200, 20, 20]
+        var colModel = [];
+
+        for (i = 0; i < columns.length; i++) {
+            colModel.push({
+                label: columnLabels[i],
+                name: columns[i],
+                width: colw[i]
+            });
+        }
+
+        $("#jqGrid").jqGrid({
+            data: data.rows,
+            datatype: "local",
+            colModel: colModel,
+            viewrecords: true,
+            width: 1170,
+            height: 570,
+            rowNum: 16,
+            autowidth: true,
+            shrinktofit: true,
+            pager: "#jqGridPager"
+        });
+        $('#jqGrid').jqGrid('filterToolbar');
+        $('#jqGrid').jqGrid('navGrid', "#jqGridPager", {
+            search: true,
+            add: false,
+            edit: false,
+            del: false,
+            view: true,
+            refresh: true
+        },
+            {}, // edit options
+            {}, // add options
+            {}, // delete options
+            { multipleSearch: true } // search options - define multiple search
+        );
+    }
+
+</script>
+
+</html>

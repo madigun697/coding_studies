@@ -1,0 +1,18 @@
+# Default ignored files
+
+AIS
+Docs
+temp
+Football
+Autowiz.ipynb
+Private_files
+**/__pycache__
+**/mongo_conn.py
+**/db_conn.py
+**/.DS_Store
+**/.ipynb_checkpoints
+cs231n_study/datasets
+Text_Mining/abcnews-date-text.csv
+
+# Temp ignored files
+Data_Compression

@@ -1,0 +1,15 @@
+4 10
+abab
+baba
+abab
+baba
+abaccbabba
+abaaaaaaaa
+bbbbbaaaba
+abbaaaaaba
+aababababb
+ababababaa
+aababababb
+ababababab
+babababbba
+ababacabbb
