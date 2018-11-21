@@ -4,6 +4,7 @@
 ./Football
 ./Autowiz.ipynb
 ./Private_files
+**/__pycache__
 **/mongo_conn.py
 **/db_conn.py
 **/.DS_Store
