@@ -1,0 +1,10 @@
+./AIS
+./Docs
+./temp
+./Football
+./Autowiz.ipynb
+./Private_files
+**/mongo_conn.py
+**/db_conn.py
+**/.DS_Store
+./.ipynb_checkpoints
