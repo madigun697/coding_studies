@@ -32,9 +32,13 @@
 
         #layout-scatter {
             width: 90%;
-            height: 450px;
             padding: 20px;
             margin-bottom: 20px;
+            float: left;
+        }
+
+        #layout-table {
+            width: 90%;
             float: left;
         }
 
@@ -86,7 +90,7 @@
             <h2>Choose Topic Cluster</h2>
             <p>Topic Keywords based on LDA</p>
         </center>
-        <svg id="hbar_container"></svg>
+        <div id="hbar_container"></div>
     </div>
     <div id='layout-output'>
         <div id='layout-scatter'>
@@ -108,7 +112,7 @@
                     <svg class='layout-scatter' id="scatter_container_de"></svg>
                 </center>
             </div>
-            <center><svg id='scatter_legend'></svg></center>
+            <center><svg id='scatter_legend' style="margin-top: 20px"></svg></center>
         </div>
         <div id='layout-table'>
             <table id="jqGrid"></table>
@@ -125,19 +129,17 @@
         left: 40
     }
 
-    var hbarCanvas = d3.select("#hbar_container")
-        .attr("width", "90%")
+    var lda_km_topic_map, km_lda_topic_map
+    var topicCnt = 0
 
+    var hbarCanvas = d3.select("#hbar_container").attr("width", "90%")
     var ldaScatterCanvas = d3.select("#scatter_container_lda")
-        .attr("width", "300px")
-        .attr("height", "300px")
-
     var kmeansScatterCanvas = d3.select("#scatter_container_km")
-        .attr("width", "300px")
-        .attr("height", "300px")
+    var deepembeddingScatterCanvas = d3.select("#scatter_container_de")
 
     d3.json('./lda/hbar_data.json').then(function (data) {
-        hbarCanvas.attr("height", (125 * (data.labels.length - 1)) + "px")
+        hbarCanvas.attr("height", (100 * (data.labels.length - 1)) + "px")
+        topicCnt = data.labels.length - 1
 
         topicSeq = 0
         data.labels.forEach(l => {
@@ -156,14 +158,29 @@
         initializeScatterLegend(data)
     });
 
+    d3.json('./km/scatter_data.json').then(function (data) {
+        initializeScatterChar(data, 'DeepEmbedding')
+        initializeScatterLegend(data)
+    });
+
     d3.json('./document_table.json').then(function (data) {
+        lda_km_topic_map = data.lda_km_topic_map
+        km_lda_topic_map = data.km_lda_topic_map
         initializeTable(data)
     });
 
     function initializeHBarChart(barData, max_width, topicSeq) {
 
-        subCanvas = hbarCanvas.append("g")
-            .attr("transform", "translate(" + (margin.left + 20) + "," + (margin.top + topicSeq * 120) + ")")
+        subCanvas = hbarCanvas.append('svg')
+            .attr("id", 'topic_' + topicSeq + '_bar')
+            .attr('height', '100px')
+            .on("click", function () {
+                handletMouseClick(topicSeq, 'LDA')
+            })
+            .append("g")
+            // .attr("transform", "translate(" + (margin.left + 20) + "," + (margin.top + topicSeq * 120) + ")")
+            .attr("transform", "translate(" + (margin.left + 20) + ", 0)")
+
         var x = d3.scaleBand()
             .rangeRound([0, 400])
             .padding(0.1)
@@ -174,9 +191,6 @@
 
         y.domain(barData.map(d => d['Term']))
         x.domain(barData.map(d => d['Freq']))
-
-        subCanvas.append('g')
-            .attr('transform', 'translate(30, 120)')
 
         subCanvas.append('g')
             .call(d3.axisLeft(y).tickSize(0))
@@ -234,17 +248,11 @@
     }
 
     function initializeScatterLegend(scatterData) {
-        topicCnt = 0
-        scatterData.forEach(d => {
-            if (topicCnt < Number(d.topic)) {
-                topicCnt = d.topic
-            }
-        })
 
-        var cValue = d3.schemeCategory10.slice(0, topicCnt + 1)
+        var cValue = d3.schemeCategory10.slice(0, topicCnt)
 
         legendSvg = d3.select("#scatter_legend")
-            .attr("width", (100 * (topicCnt + 1) / 2) + "px")
+            .attr("width", (100 * (topicCnt) / 2) + "px")
             .attr("height", "40px")
 
         // draw legend
@@ -270,15 +278,17 @@
     }
 
     function initializeScatterChar(scatterData, method) {
+        var chart_size = $('#layout-scatter').width() / 3 - 50
+
         // setup x 
         var xValue = function (d) { return d.plot_x; }, // data -> value
-            xScale = d3.scaleLinear().range([0, 300]), // value -> display
+            xScale = d3.scaleLinear().range([0, chart_size]), // value -> display
             xMap = function (d) { return xScale(xValue(d)); }, // data -> display
             xAxis = d3.axisBottom(xScale).tickSize(0).tickFormat('');
 
         // setup y
         var yValue = function (d) { return d.plot_y; }, // data -> value
-            yScale = d3.scaleLinear().range([300, 0]), // value -> display
+            yScale = d3.scaleLinear().range([chart_size, 0]), // value -> display
             yMap = function (d) { return yScale(yValue(d)); }, // data -> display
             yAxis = d3.axisLeft(yScale).tickSize(0).tickFormat('');
 
@@ -289,20 +299,28 @@
         yScale.domain([d3.min(scatterData, yValue) - 1, d3.max(scatterData, yValue) + 1]);
 
         if (method == 'LDA') {
+            ldaScatterCanvas.attr("width", ($('#layout-scatter').width() / 3 - 50) + "px")
+                .attr("height", ($('#layout-scatter').width() / 3 - 50) + "px")
             canvasSvg = ldaScatterCanvas
         } else if (method == 'KMeans') {
+            kmeansScatterCanvas.attr("width", ($('#layout-scatter').width() / 3 - 50) + "px")
+                .attr("height", ($('#layout-scatter').width() / 3 - 50) + "px")
             canvasSvg = kmeansScatterCanvas
+        } else if (method == 'DeepEmbedding') {
+            deepembeddingScatterCanvas.attr("width", ($('#layout-scatter').width() / 3 - 50) + "px")
+                .attr("height", ($('#layout-scatter').width() / 3 - 50) + "px")
+            canvasSvg = deepembeddingScatterCanvas
         }
 
         // x-axis
         canvasSvg.append("g")
             .attr("class", "x axis")
-            .attr("transform", "translate(0," + 300 + ")")
+            .attr("transform", "translate(0," + chart_size + ")")
             .call(xAxis)
             .call(canvasSvg => canvasSvg.select('.domain').remove())
             .append("text")
             .attr("class", "label")
-            .attr("x", 300)
+            .attr("x", chart_size)
             .attr("y", -6)
             .style("text-anchor", "end");
 
@@ -322,11 +340,28 @@
         canvasSvg.selectAll(".dot")
             .data(scatterData)
             .enter().append("circle")
-            .attr("class", "dot")
+            .attr("class", function (d) { return 'dot_' + d.topic })
             .attr("r", 3.5)
             .attr("cx", xMap)
             .attr("cy", yMap)
-            .style("fill", function (d) { return cValue[d.topic]; });
+            .style("fill", function (d) { return cValue[d.topic]; })
+            .on('click', function(d) {
+                handletMouseClick(d.topic, method)
+            })
+    }
+
+    function handletMouseClick(topicSeq, method) {
+        
+
+        for (var i = 0; i < topicCnt; i++) {
+            if (i === topicSeq) {
+                d3.selectAll('.dot_' + i).attr('r', 10)
+                d3.select('#topic_' + i + '_bar').style('background', '#FF000020')
+            } else {
+                d3.selectAll('.dot_' + i).attr('r', 3.5)
+                d3.select('#topic_' + i + '_bar').style('background', '')
+            }
+        }
     }
 
     function initializeTable(data) {
