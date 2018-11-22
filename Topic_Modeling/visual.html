@@ -63,7 +63,7 @@
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/ui.jqgrid-bootstrap.css" />
 
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -130,6 +130,7 @@
     }
 
     var lda_km_topic_map, km_lda_topic_map
+    var tableData
     var hbar_type = 'lda'
     var topicCnt = 0
 
@@ -167,7 +168,9 @@
     d3.json('./document_table.json').then(function (data) {
         lda_km_topic_map = data.lda_km_topic_map
         km_lda_topic_map = data.km_lda_topic_map
-        initializeTable(data)
+        tableData = data.rows
+        initializeTable(tableData)
+
     });
 
     function initializeHBarChart(barData, max_width, topicSeq, method) {
@@ -339,12 +342,12 @@
         canvasSvg.selectAll(".dot")
             .data(scatterData)
             .enter().append("circle")
-            .attr("class", function (d) { return 'dot_' + d.topic + '_' + method})
+            .attr("class", function (d) { return 'dot_' + d.topic + '_' + method })
             .attr("r", 4)
             .attr("cx", xMap)
             .attr("cy", yMap)
             .style("fill", function (d) { return cValue[d.topic]; })
-            .on('click', function(d) {
+            .on('click', function (d) {
                 handletMouseClick(d.topic, method)
             })
     }
@@ -373,9 +376,11 @@
         }
 
         if (method === 'km') {
-            scatterTopic = km_lda_topic_map[selectedTopic][0]
+            ldaTopic = km_lda_topic_map[selectedTopic][0]
+            kmTopic = selectedTopic
         } else {
-            scatterTopic = selectedTopic
+            ldaTopic = selectedTopic
+            kmTopic = lda_km_topic_map[selectedTopic][0]
         }
 
         for (var i = 0; i < topicCnt; i++) {
@@ -384,19 +389,27 @@
             } else {
                 d3.select('#topic_' + i + '_bar_' + method).style('background', '')
             }
-            
-            if (i === scatterTopic) {
+
+            if (i === ldaTopic) {
                 d3.selectAll('.dot_' + i + '_lda').attr('r', 10)
-                lda_km_topic_map[i].forEach( idx => {
+                lda_km_topic_map[i].forEach(idx => {
                     d3.selectAll('.dot_' + idx + '_km').attr('r', 10)
                 })
             } else {
                 d3.selectAll('.dot_' + i + '_lda').attr('r', 4)
-                lda_km_topic_map[i].forEach( idx => {
+                lda_km_topic_map[i].forEach(idx => {
                     d3.selectAll('.dot_' + idx + '_km').attr('r', 4)
                 })
             }
         }
+
+        filteredData = tableData.filter(function (d) { return d.topic_lda === ldaTopic || d.topic_km === kmTopic })
+
+        $("#jqGrid").jqGrid('clearGridData')
+            .jqGrid('setGridParam', {
+                datatype: 'local',
+                data: filteredData
+            }).trigger("reloadGrid");
     }
 
     function initializeTable(data) {
@@ -414,13 +427,13 @@
         }
 
         $("#jqGrid").jqGrid({
-            data: data.rows,
+            data: data,
             datatype: "local",
             colModel: colModel,
             viewrecords: true,
             width: 1170,
             height: 570,
-            rowNum: 16,
+            rowNum: 15,
             autowidth: true,
             shrinktofit: true,
             pager: "#jqGridPager"
