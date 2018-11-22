@@ -1,66 +1,291 @@
 {
+    "max_width": 1529675.0,
+    "Topic5": [
+        {
+            "Term": "patient",
+            "Freq": 657894.0,
+            "Total": 1529675.0,
+            "term": 606
+        },
+        {
+            "Term": "outcom",
+            "Freq": 277008.0,
+            "Total": 277008.0,
+            "term": 460
+        },
+        {
+            "Term": "hospit",
+            "Freq": 253924.0,
+            "Total": 269194.0,
+            "term": 85
+        },
+        {
+            "Term": "acut",
+            "Freq": 242382.0,
+            "Total": 252257.0,
+            "term": 554
+        },
+        {
+            "Term": "clinic",
+            "Freq": 242382.0,
+            "Total": 262848.0,
+            "term": 234
+        }
+    ],
+    "Topic2": [
+        {
+            "Term": "risk",
+            "Freq": 615195.0,
+            "Total": 700067.0,
+            "term": 601
+        },
+        {
+            "Term": "score",
+            "Freq": 464535.0,
+            "Total": 464535.0,
+            "term": 177
+        },
+        {
+            "Term": "stroke",
+            "Freq": 338985.0,
+            "Total": 351414.0,
+            "term": 1137
+        },
+        {
+            "Term": "factor",
+            "Freq": 238545.0,
+            "Total": 238545.0,
+            "term": 960
+        },
+        {
+            "Term": "associ",
+            "Freq": 238545.0,
+            "Total": 321771.0,
+            "term": 413
+        }
+    ],
+    "Topic1": [
+        {
+            "Term": "regress",
+            "Freq": 503910.0,
+            "Total": 503910.0,
+            "term": 1094
+        },
+        {
+            "Term": "model",
+            "Freq": 473370.0,
+            "Total": 548574.0,
+            "term": 371
+        },
+        {
+            "Term": "hazard",
+            "Freq": 366480.0,
+            "Total": 426575.0,
+            "term": 471
+        },
+        {
+            "Term": "ventricular",
+            "Freq": 351210.0,
+            "Total": 351210.0,
+            "term": 0
+        },
+        {
+            "Term": "multivari",
+            "Freq": 351210.0,
+            "Total": 361067.0,
+            "term": 219
+        }
+    ],
+    "Topic4": [
+        {
+            "Term": "event",
+            "Freq": 939276.0,
+            "Total": 989496.0,
+            "term": 690
+        },
+        {
+            "Term": "advers",
+            "Freq": 842940.0,
+            "Total": 842940.0,
+            "term": 962
+        },
+        {
+            "Term": "treatment",
+            "Freq": 794772.0,
+            "Total": 850797.0,
+            "term": 956
+        },
+        {
+            "Term": "grade",
+            "Freq": 361260.0,
+            "Total": 361260.0,
+            "term": 925
+        },
+        {
+            "Term": "group",
+            "Freq": 349218.0,
+            "Total": 543990.0,
+            "term": 1143
+        }
+    ],
     "Default": [
         {
-            "term": 793,
             "Term": "patient",
+            "Freq": 1529675.0,
             "Total": 1529675.0,
-            "Freq": 1529675.0
+            "term": 606
         },
         {
-            "term": 243,
             "Term": "event",
+            "Freq": 989496.0,
             "Total": 989496.0,
-            "Freq": 989496.0
+            "term": 690
         },
         {
-            "term": 841,
             "Term": "treatment",
+            "Freq": 850797.0,
             "Total": 850797.0,
-            "Freq": 850797.0
+            "term": 956
         },
         {
-            "term": 580,
             "Term": "advers",
+            "Freq": 842940.0,
             "Total": 842940.0,
-            "Freq": 842940.0
+            "term": 962
         },
         {
-            "term": 895,
             "Term": "risk",
+            "Freq": 700067.0,
             "Total": 700067.0,
-            "Freq": 700067.0
+            "term": 601
         }
     ],
     "Topic7": [
         {
-            "term": 612,
             "Term": "cancer",
+            "Freq": 266625.0,
             "Total": 266625.0,
-            "Freq": 266625.0
+            "term": 337
         },
         {
-            "term": 953,
             "Term": "year",
+            "Freq": 246875.0,
             "Total": 640341.0,
-            "Freq": 246875.0
+            "term": 870
         },
         {
-            "term": 214,
             "Term": "health",
+            "Freq": 148125.0,
             "Total": 197410.0,
-            "Freq": 148125.0
+            "term": 138
         },
         {
-            "term": 90,
             "Term": "incid",
+            "Freq": 138250.0,
             "Total": 289064.0,
-            "Freq": 138250.0
+            "term": 209
         },
         {
-            "term": 739,
             "Term": "develop",
+            "Freq": 128375.0,
             "Total": 128375.0,
-            "Freq": 128375.0
+            "term": 665
+        }
+    ],
+    "Topic3": [
+        {
+            "Term": "coronari",
+            "Freq": 584163.0,
+            "Total": 652482.0,
+            "term": 673
+        },
+        {
+            "Term": "arteri",
+            "Freq": 211293.0,
+            "Total": 211293.0,
+            "term": 776
+        },
+        {
+            "Term": "patient",
+            "Freq": 198864.0,
+            "Total": 1529675.0,
+            "term": 606
+        },
+        {
+            "Term": "wall",
+            "Freq": 186435.0,
+            "Total": 186435.0,
+            "term": 719
+        },
+        {
+            "Term": "detect",
+            "Freq": 186435.0,
+            "Total": 198990.0,
+            "term": 971
+        }
+    ],
+    "Topic8": [
+        {
+            "Term": "intervent",
+            "Freq": 187283.0,
+            "Total": 187283.0,
+            "term": 405
+        },
+        {
+            "Term": "modern",
+            "Freq": 128141.0,
+            "Total": 128141.0,
+            "term": 192
+        },
+        {
+            "Term": "estim",
+            "Freq": 118284.0,
+            "Total": 118284.0,
+            "term": 1010
+        },
+        {
+            "Term": "method",
+            "Freq": 118284.0,
+            "Total": 155571.0,
+            "term": 239
+        },
+        {
+            "Term": "women",
+            "Freq": 118284.0,
+            "Total": 167659.0,
+            "term": 494
+        }
+    ],
+    "Topic6": [
+        {
+            "Term": "year",
+            "Freq": 381924.0,
+            "Total": 640341.0,
+            "term": 870
+        },
+        {
+            "Term": "death",
+            "Freq": 360706.0,
+            "Total": 691251.0,
+            "term": 116
+        },
+        {
+            "Term": "caus",
+            "Freq": 350097.0,
+            "Total": 350097.0,
+            "term": 959
+        },
+        {
+            "Term": "efficaci",
+            "Freq": 201571.0,
+            "Total": 201571.0,
+            "term": 474
+        },
+        {
+            "Term": "rat",
+            "Freq": 201571.0,
+            "Total": 284864.0,
+            "term": 734
         }
     ],
     "labels": [
@@ -73,230 +298,5 @@
         "Topic6",
         "Topic7",
         "Topic8"
-    ],
-    "max_width": 1529675.0,
-    "Topic1": [
-        {
-            "term": 1160,
-            "Term": "regress",
-            "Total": 503910.0,
-            "Freq": 503910.0
-        },
-        {
-            "term": 192,
-            "Term": "model",
-            "Total": 548574.0,
-            "Freq": 473370.0
-        },
-        {
-            "term": 101,
-            "Term": "hazard",
-            "Total": 426575.0,
-            "Freq": 366480.0
-        },
-        {
-            "term": 1094,
-            "Term": "ventricular",
-            "Total": 351210.0,
-            "Freq": 351210.0
-        },
-        {
-            "term": 678,
-            "Term": "multivari",
-            "Total": 361067.0,
-            "Freq": 351210.0
-        }
-    ],
-    "Topic3": [
-        {
-            "term": 1012,
-            "Term": "coronari",
-            "Total": 652482.0,
-            "Freq": 584163.0
-        },
-        {
-            "term": 629,
-            "Term": "arteri",
-            "Total": 211293.0,
-            "Freq": 211293.0
-        },
-        {
-            "term": 793,
-            "Term": "patient",
-            "Total": 1529675.0,
-            "Freq": 198864.0
-        },
-        {
-            "term": 450,
-            "Term": "wall",
-            "Total": 186435.0,
-            "Freq": 186435.0
-        },
-        {
-            "term": 56,
-            "Term": "detect",
-            "Total": 198990.0,
-            "Freq": 186435.0
-        }
-    ],
-    "Topic6": [
-        {
-            "term": 953,
-            "Term": "year",
-            "Total": 640341.0,
-            "Freq": 381924.0
-        },
-        {
-            "term": 1044,
-            "Term": "death",
-            "Total": 691251.0,
-            "Freq": 360706.0
-        },
-        {
-            "term": 472,
-            "Term": "caus",
-            "Total": 350097.0,
-            "Freq": 350097.0
-        },
-        {
-            "term": 173,
-            "Term": "efficaci",
-            "Total": 201571.0,
-            "Freq": 201571.0
-        },
-        {
-            "term": 1102,
-            "Term": "rat",
-            "Total": 284864.0,
-            "Freq": 201571.0
-        }
-    ],
-    "Topic8": [
-        {
-            "term": 796,
-            "Term": "intervent",
-            "Total": 187283.0,
-            "Freq": 187283.0
-        },
-        {
-            "term": 935,
-            "Term": "modern",
-            "Total": 128141.0,
-            "Freq": 128141.0
-        },
-        {
-            "term": 1081,
-            "Term": "estim",
-            "Total": 118284.0,
-            "Freq": 118284.0
-        },
-        {
-            "term": 205,
-            "Term": "method",
-            "Total": 155571.0,
-            "Freq": 118284.0
-        },
-        {
-            "term": 119,
-            "Term": "women",
-            "Total": 167659.0,
-            "Freq": 118284.0
-        }
-    ],
-    "Topic5": [
-        {
-            "term": 793,
-            "Term": "patient",
-            "Total": 1529675.0,
-            "Freq": 657894.0
-        },
-        {
-            "term": 1057,
-            "Term": "outcom",
-            "Total": 277008.0,
-            "Freq": 277008.0
-        },
-        {
-            "term": 594,
-            "Term": "hospit",
-            "Total": 269194.0,
-            "Freq": 253924.0
-        },
-        {
-            "term": 1111,
-            "Term": "acut",
-            "Total": 252257.0,
-            "Freq": 242382.0
-        },
-        {
-            "term": 920,
-            "Term": "clinic",
-            "Total": 262848.0,
-            "Freq": 242382.0
-        }
-    ],
-    "Topic4": [
-        {
-            "term": 243,
-            "Term": "event",
-            "Total": 989496.0,
-            "Freq": 939276.0
-        },
-        {
-            "term": 580,
-            "Term": "advers",
-            "Total": 842940.0,
-            "Freq": 842940.0
-        },
-        {
-            "term": 841,
-            "Term": "treatment",
-            "Total": 850797.0,
-            "Freq": 794772.0
-        },
-        {
-            "term": 334,
-            "Term": "grade",
-            "Total": 361260.0,
-            "Freq": 361260.0
-        },
-        {
-            "term": 892,
-            "Term": "group",
-            "Total": 543990.0,
-            "Freq": 349218.0
-        }
-    ],
-    "Topic2": [
-        {
-            "term": 895,
-            "Term": "risk",
-            "Total": 700067.0,
-            "Freq": 615195.0
-        },
-        {
-            "term": 131,
-            "Term": "score",
-            "Total": 464535.0,
-            "Freq": 464535.0
-        },
-        {
-            "term": 401,
-            "Term": "stroke",
-            "Total": 351414.0,
-            "Freq": 338985.0
-        },
-        {
-            "term": 1120,
-            "Term": "factor",
-            "Total": 238545.0,
-            "Freq": 238545.0
-        },
-        {
-            "term": 372,
-            "Term": "associ",
-            "Total": 321771.0,
-            "Freq": 238545.0
-        }
     ]
 }
