@@ -88,7 +88,7 @@
     <div id='layout-hbar'>
         <center>
             <h2>Choose Topic Cluster</h2>
-            <p>Topic Keywords based on LDA</p>
+            <p>Topic Keywords based on lda</p>
         </center>
         <div id="hbar_container"></div>
     </div>
@@ -130,6 +130,7 @@
     }
 
     var lda_km_topic_map, km_lda_topic_map
+    var hbar_type = 'lda'
     var topicCnt = 0
 
     var hbarCanvas = d3.select("#hbar_container").attr("width", "90%")
@@ -144,17 +145,17 @@
         topicSeq = 0
         data.labels.forEach(l => {
             if (l != 'Default') {
-                initializeHBarChart(data[l], data.max_width, topicSeq++)
+                initializeHBarChart(data[l], data.max_width, topicSeq++, 'lda')
             }
         });
     });
 
     d3.json('./lda/scatter_data.json').then(function (data) {
-        initializeScatterChar(data, 'LDA')
+        initializeScatterChar(data, 'lda')
     });
 
     d3.json('./km/scatter_data.json').then(function (data) {
-        initializeScatterChar(data, 'KMeans')
+        initializeScatterChar(data, 'km')
         initializeScatterLegend(data)
     });
 
@@ -169,16 +170,14 @@
         initializeTable(data)
     });
 
-    function initializeHBarChart(barData, max_width, topicSeq) {
-
+    function initializeHBarChart(barData, max_width, topicSeq, method) {
         subCanvas = hbarCanvas.append('svg')
-            .attr("id", 'topic_' + topicSeq + '_bar')
+            .attr("id", 'topic_' + topicSeq + '_bar_' + method)
             .attr('height', '100px')
             .on("click", function () {
-                handletMouseClick(topicSeq, 'LDA')
+                handletMouseClick(topicSeq, method)
             })
             .append("g")
-            // .attr("transform", "translate(" + (margin.left + 20) + "," + (margin.top + topicSeq * 120) + ")")
             .attr("transform", "translate(" + (margin.left + 20) + ", 0)")
 
         var x = d3.scaleBand()
@@ -298,11 +297,11 @@
         xScale.domain([d3.min(scatterData, xValue) - 1, d3.max(scatterData, xValue) + 1]);
         yScale.domain([d3.min(scatterData, yValue) - 1, d3.max(scatterData, yValue) + 1]);
 
-        if (method == 'LDA') {
+        if (method == 'lda') {
             ldaScatterCanvas.attr("width", ($('#layout-scatter').width() / 3 - 50) + "px")
                 .attr("height", ($('#layout-scatter').width() / 3 - 50) + "px")
             canvasSvg = ldaScatterCanvas
-        } else if (method == 'KMeans') {
+        } else if (method == 'km') {
             kmeansScatterCanvas.attr("width", ($('#layout-scatter').width() / 3 - 50) + "px")
                 .attr("height", ($('#layout-scatter').width() / 3 - 50) + "px")
             canvasSvg = kmeansScatterCanvas
@@ -340,8 +339,8 @@
         canvasSvg.selectAll(".dot")
             .data(scatterData)
             .enter().append("circle")
-            .attr("class", function (d) { return 'dot_' + d.topic })
-            .attr("r", 3.5)
+            .attr("class", function (d) { return 'dot_' + d.topic + '_' + method})
+            .attr("r", 4)
             .attr("cx", xMap)
             .attr("cy", yMap)
             .style("fill", function (d) { return cValue[d.topic]; })
@@ -350,23 +349,59 @@
             })
     }
 
-    function handletMouseClick(topicSeq, method) {
-        
+    function handletMouseClick(selectedTopic, method) {
+        // If user change model, Change HBar Chart
+        if (hbar_type != method) {
+            hbar_type = method
+
+            hbarCanvas.selectAll('svg').remove()
+            d3.json('./' + method + '/hbar_data.json').then(function (data) {
+                hbarCanvas.attr("height", (100 * (data.labels.length - 1)) + "px")
+                topicCnt = data.labels.length - 1
+
+                topicSeq = 0
+                data.labels.forEach(l => {
+                    if (l != 'Default') {
+                        initializeHBarChart(data[l], data.max_width, topicSeq++, method)
+                    }
+                });
+
+                d3.select('#topic_' + selectedTopic + '_bar_' + method).style('background', '#FF000020')
+            });
+
+
+        }
+
+        if (method === 'km') {
+            scatterTopic = km_lda_topic_map[selectedTopic][0]
+        } else {
+            scatterTopic = selectedTopic
+        }
 
         for (var i = 0; i < topicCnt; i++) {
-            if (i === topicSeq) {
-                d3.selectAll('.dot_' + i).attr('r', 10)
-                d3.select('#topic_' + i + '_bar').style('background', '#FF000020')
+            if (i === selectedTopic) {
+                d3.select('#topic_' + i + '_bar_' + method).style('background', '#FF000020')
             } else {
-                d3.selectAll('.dot_' + i).attr('r', 3.5)
-                d3.select('#topic_' + i + '_bar').style('background', '')
+                d3.select('#topic_' + i + '_bar_' + method).style('background', '')
+            }
+            
+            if (i === scatterTopic) {
+                d3.selectAll('.dot_' + i + '_lda').attr('r', 10)
+                lda_km_topic_map[i].forEach( idx => {
+                    d3.selectAll('.dot_' + idx + '_km').attr('r', 10)
+                })
+            } else {
+                d3.selectAll('.dot_' + i + '_lda').attr('r', 4)
+                lda_km_topic_map[i].forEach( idx => {
+                    d3.selectAll('.dot_' + idx + '_km').attr('r', 4)
+                })
             }
         }
     }
 
     function initializeTable(data) {
         var columns = ['document', 'topic_lda', 'topic_km'];
-        var columnLabels = ['Document', 'Topic(LDA)', 'Topic(KM)'];
+        var columnLabels = ['Document', 'Topic(lda)', 'Topic(KM)'];
         var colw = [200, 20, 20]
         var colModel = [];
 
