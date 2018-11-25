@@ -1,0 +1,38 @@
+{
+    "labels": [
+        "Default"
+    ],
+    "max_width": NaN,
+    "Default": [
+        {
+            "index": 0,
+            "Freq": 0.99,
+            "Total": 127,
+            "Term": "preval"
+        },
+        {
+            "index": 1,
+            "Freq": 0.99,
+            "Total": 82,
+            "Term": "random"
+        },
+        {
+            "index": 2,
+            "Freq": 0.99,
+            "Total": 71,
+            "Term": "dysfunct"
+        },
+        {
+            "index": 3,
+            "Freq": 0.99,
+            "Total": 70,
+            "Term": "compris"
+        },
+        {
+            "index": 4,
+            "Freq": 0.99,
+            "Total": 62,
+            "Term": "intracoronari"
+        }
+    ]
+}

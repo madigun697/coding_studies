@@ -160,14 +160,17 @@
         initializeScatterLegend(data)
     });
 
-    d3.json('./km/scatter_data.json').then(function (data) {
-        initializeScatterChar(data, 'DeepEmbedding')
+    d3.json('./dec/scatter_data.json').then(function (data) {
+        initializeScatterChar(data, 'dec')
         initializeScatterLegend(data)
     });
 
     d3.json('./document_table.json').then(function (data) {
         lda_km_topic_map = data.lda_km_topic_map
         km_lda_topic_map = data.km_lda_topic_map
+        lda_dec_topic_map = data.lda_dec_topic_map
+        dec_lda_topic_map = data.dec_lda_topic_map
+
         tableData = data.rows
         initializeTable(tableData)
 
@@ -308,7 +311,7 @@
             kmeansScatterCanvas.attr("width", ($('#layout-scatter').width() / 3 - 50) + "px")
                 .attr("height", ($('#layout-scatter').width() / 3 - 50) + "px")
             canvasSvg = kmeansScatterCanvas
-        } else if (method == 'DeepEmbedding') {
+        } else if (method == 'dec') {
             deepembeddingScatterCanvas.attr("width", ($('#layout-scatter').width() / 3 - 50) + "px")
                 .attr("height", ($('#layout-scatter').width() / 3 - 50) + "px")
             canvasSvg = deepembeddingScatterCanvas
@@ -377,11 +380,14 @@
 
         if (method === 'km') {
             ldaTopic = km_lda_topic_map[selectedTopic][0]
-            kmTopic = selectedTopic
+        } else if (method === 'dec') {
+            ldaTopic = dec_lda_topic_map[selectedTopic][0]
         } else {
             ldaTopic = selectedTopic
-            kmTopic = lda_km_topic_map[selectedTopic][0]
         }
+
+        kmTopic = lda_km_topic_map[ldaTopic]
+        decTopic = lda_dec_topic_map[ldaTopic]
 
         for (var i = 0; i < topicCnt; i++) {
             if (i === selectedTopic) {
@@ -395,15 +401,21 @@
                 lda_km_topic_map[i].forEach(idx => {
                     d3.selectAll('.dot_' + idx + '_km').attr('r', 10)
                 })
+                lda_dec_topic_map[i].forEach(idx => {
+                    d3.selectAll('.dot_' + idx + '_dec').attr('r', 10)
+                })
             } else {
                 d3.selectAll('.dot_' + i + '_lda').attr('r', 4)
                 lda_km_topic_map[i].forEach(idx => {
                     d3.selectAll('.dot_' + idx + '_km').attr('r', 4)
                 })
+                lda_dec_topic_map[i].forEach(idx => {
+                    d3.selectAll('.dot_' + idx + '_dec').attr('r', 4)
+                })
             }
         }
 
-        filteredData = tableData.filter(function (d) { return d.topic_lda === ldaTopic || d.topic_km === kmTopic })
+        filteredData = tableData.filter(function (d) { return d.topic_lda === ldaTopic || d.topic_km in kmTopic || d.topic_lda in decTopic })
 
         $("#jqGrid").jqGrid('clearGridData')
             .jqGrid('setGridParam', {
@@ -413,9 +425,9 @@
     }
 
     function initializeTable(data) {
-        var columns = ['document', 'topic_lda', 'topic_km'];
-        var columnLabels = ['Document', 'Topic(lda)', 'Topic(KM)'];
-        var colw = [200, 20, 20]
+        var columns = ['document', 'topic_lda', 'topic_km', 'topic_dec'];
+        var columnLabels = ['Document', 'Topic(lda)', 'Topic(KM)', 'Topic(DEC)'];
+        var colw = [70, 10, 10, 10]
         var colModel = [];
 
         for (i = 0; i < columns.length; i++) {
@@ -440,7 +452,7 @@
         });
         $('#jqGrid').jqGrid('filterToolbar');
         $('#jqGrid').jqGrid('navGrid', "#jqGridPager", {
-            search: true,
+            search: false,
             add: false,
             edit: false,
             del: false,
