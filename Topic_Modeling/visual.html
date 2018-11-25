@@ -88,7 +88,7 @@
     <div id='layout-hbar'>
         <center>
             <h2>Choose Topic Cluster</h2>
-            <p>Topic Keywords based on lda</p>
+            <p id='hbar-description'>Topic Keywords based on LDA</p>
         </center>
         <div id="hbar_container"></div>
     </div>
@@ -375,6 +375,14 @@
                 d3.select('#topic_' + selectedTopic + '_bar_' + method).style('background', '#FF000020')
             });
 
+            if (hbar_type === 'lda') {
+                d3.select('#hbar-description').html('Topic Keywords based on LDA')
+            } else if (hbar_type === 'km') {
+                d3.select('#hbar-description').html('Topic Keywords based on K-Means')
+            } else if (hbar_type === 'dec') {
+                d3.select('#hbar-description').html('Topic Keywords based on Deep Embedding')
+            }
+            
 
         }
 
@@ -448,7 +456,8 @@
             rowNum: 15,
             autowidth: true,
             shrinktofit: true,
-            pager: "#jqGridPager"
+            pager: "#jqGridPager",
+            sortname: "document"
         });
         $('#jqGrid').jqGrid('filterToolbar');
         $('#jqGrid').jqGrid('navGrid', "#jqGridPager", {
