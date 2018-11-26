@@ -1,0 +1,38 @@
+{
+    "labels": [
+        "Default"
+    ],
+    "Default": [
+        {
+            "Freq": 0.99,
+            "index": 0,
+            "Term": "base",
+            "Total": 127
+        },
+        {
+            "Freq": 0.99,
+            "index": 1,
+            "Term": "absolut",
+            "Total": 82
+        },
+        {
+            "Freq": 0.99,
+            "index": 2,
+            "Term": "anterior",
+            "Total": 71
+        },
+        {
+            "Freq": 0.99,
+            "index": 3,
+            "Term": "carbon",
+            "Total": 70
+        },
+        {
+            "Freq": 0.99,
+            "index": 4,
+            "Term": "privat",
+            "Total": 62
+        }
+    ],
+    "max_width": NaN
+}

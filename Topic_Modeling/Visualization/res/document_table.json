@@ -1,0 +1,2504 @@
+{
+	"lda_km_topic_map": {
+		"0": [
+			7
+		],
+		"1": [
+			0,
+			5
+		],
+		"2": [],
+		"3": [
+			2
+		],
+		"4": [
+			4
+		],
+		"5": [
+			3
+		],
+		"6": [
+			1
+		],
+		"7": [
+			6
+		]
+	},
+	"km_lda_topic_map": {
+		"0": [
+			1
+		],
+		"1": [
+			6
+		],
+		"2": [
+			3
+		],
+		"3": [
+			5
+		],
+		"4": [
+			4
+		],
+		"5": [
+			1
+		],
+		"6": [
+			7
+		],
+		"7": [
+			0
+		]
+	},
+	"lda_dec_topic_map": {
+		"0": [
+			4
+		],
+		"1": [],
+		"2": [],
+		"3": [
+			2
+		],
+		"4": [],
+		"5": [
+			7
+		],
+		"6": [
+			0,
+			1,
+			5
+		],
+		"7": [
+			3,
+			6
+		]
+	},
+	"dec_lda_topic_map": {
+		"0": [
+			6
+		],
+		"1": [
+			6
+		],
+		"2": [
+			3
+		],
+		"3": [
+			7
+		],
+		"4": [
+			0
+		],
+		"5": [
+			6
+		],
+		"6": [
+			7
+		],
+		"7": [
+			5
+		]
+	},
+	"rows": [
+		{
+			"document": "Hazard Ratio  (and 95% Confidence Intervals)  in Univariate and Multivariate Analysis of Predictors of Major Cardiac Events  (Cardiac Death or Worsening of Heart Failure Leading to Heart Transplantation)",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Left Ventricular and Right Ventricular Ejection Fractions, Left Ventricular and Right Ventricular Mean Phases, Left-to-Right Mean Phase Difference  (L-RMP)  and Phase Standard Deviations for Both Ventricles in 30 Cases of Left Sided WPW legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Partial Regression Coefficients  (All Subjects, n = 262)  for Forward Stepwise Linear Regression for Dependent Variables Augmentation Pressure and Augmentation Index    legend",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Left Ventricular  (LVEF)  and Right Ventricular  (RVEF)  Ejection Fractions, Left Ventricular  (LVMP)  and Right Ventricular  (RVMP)  Mean Phases, Left-to-Right Mean Phase Difference  (L-RMP)  and Phase Standard Deviations  (LVPSD and RVPSD)  for Both Ventricles in 14 Cases of Right Sided WPW legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Predictors of Mortality by Multivariable Analysis: Variables Are Shown in the Order They Entered a Stepwise Cox Regression Model",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Logistic Regression Models for Pre- and Post-Transplant Predictors for Normalization of Left Ventricular Ejection Fraction  (LVEF 50%)  in the Post-Transplant Period  (Reference Group: Group With LVEF 50% in the Post-Transplant Period)",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Results of Survival Analysis  (Cox Proportional Hazards Model)  for the Combined End Point: Cardiac Mortality + Urgent Heart Transplantation + Readmission for Congestive Heart Failure",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Impact of Normal Versus Reduced Left Ventricular Ejection Fraction on the Mortality of Congestive Heart Failure Cases: Results of Cox Proportional Hazards Regression Models",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Description of the Left Ventricular Ejection Fraction  (LVEF%)  at Different Time Periods: At the Time of Transplant Evaluation, While on the Waiting List to be Transplanted, and During the Follow-Up After Kidney Transplantation",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Univariate Cox Regression Analysis and Cox Proportional Hazards Analysis of Predictors of Cardiac Death legend",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Gender-Specific Mean and Standard Deviation of LV Mass, End-Diastolic Volume, Stroke Volume, Ejection Fraction, and Cardiac Output by Cardiac MRI in MESA Participants",
+			"topic_dec": 5,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Results of Multiple Logistic Regression Analysis: Final Significant Variables in Equation Using Forward Stepwise Selection  (Wald)",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multivariable Cox Proportional Regression Analysis Showing Significant Predictors of Outcome  (Death, Heart Transplant, or Left Ventricular Assist Device Implantation)  in Cardiac Resynchronization Therapy Patients",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multiple regression analysis using Cox's proportional hazards model to determine the influence of individual variables on survival in hypopituitarism",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "ORs and RRs  (95% Confidence Intervals)  for Other Correlates of Preserved Left Ventricular Systolic Function in Order of Entry Into the Full Logistic Model",
+			"topic_dec": 6,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multiple Regression Analysis of Variables Associated With CD40L Levels; Entire Model  (Regression Summary for Dependent Variable: R2= 0.60, F = 5.58; p < 0.00005)  and Final Model With Stepwise Method",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Final multivariable Cox proportional hazards model of time to first late seizure in the derivation cohort",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Univariate and Multivariate Linear Model of Left Ventricular End-Diastolic Volume Index in 113 Patients With CHF legend",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Logistic Regression Multivariate Independent Predictors of Spontaneous Conversion to Sinus Rhythm",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Table of Regression Coefficients From a Multivariate Linear Regression Model for LV Mass-to-Volume Ratio",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Univariate and Multivariate Cox Proportional Hazard Analyses for the Identification of Patients With Chronic Heart Failure at Risk for Cardiac Events",
+			"topic_dec": 1,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Variables Independently Associated With In-Hospital Mortality Adjusted by Risk in a Multivariable Logistic Regression Model and a Multilevel Model, With Odds Ratio and 95% Confidence Intervals for Each Variable",
+			"topic_dec": 5,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Cox proportional hazards regression model for individual factors affecting graft failure in first-time recipients of kidneys from cardiac-death donors, adjusted for age of donors and recipients, and cold ischaemic time",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Final Multivariable Cox Proportional Hazards Model  (Global Chi-Square of the Model = 1,146.1, p < 0.001)",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multivariate Stepwise Cox Regression Analysis of Potential Risk Variables in Order to Detect Independent Predictors of Cardiac Death or Acute Myocardial Infarction at 30 Days legend",
+			"topic_dec": 5,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Intervals Measured During Ventricular Tachycardia, Responses to Pacing During Ventricular Tachycardia and Sinus Rhythm and Presence of Isolated Diastolic Potential During Sinus Rhythm",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 0
+		},
+		{
+			"document": "Impact of Congestive Heart Failure on Mortality: Results of Multivariable Cox Proportional Hazards Regression Models legend",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multivariable Analysis for Independent Predictors of Survival in HFpEF Patients  (Cox Proportional Hazard Model)",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multiple Linear Regression Analysis Assessing the Independent Influence of Different Variables on Natriuretic Peptides",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multiple Regression Analysis of the Relationship Between Left Ventricular Mass Index and Other Variables for the Entire Group",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Cox proportional hazards regression model for graft failure in first-time recipients of kidneys from cardiac-death donors, adjusted for age of donors and recipients, and cold ischaemic time",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Partial Correlation Coefficients  (r) , Controlled for Age, of Body Size, Body Composition and Blood Pressure With Unindexed and Indexed Left Ventricular Mass  (LVM)",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Multiple Linear Regression Analysis Results With Augmentation Index as the Dependent Variable  a",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multivariate Cox Proportional Hazards Regression Model of Significant Predictors of Death or Heart Failure",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Results of Multivariable Modeling: Hazard Ratios, 95% Confidence Intervals and p Values for Significant Multivariable Predictors of Outcome in Models That Incorporate Echocardiographic, Clinical and Hemodynamic Variables",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Differences Among End-Diastolic Volume, End-Systolic Volume, Ejection Fraction and Left Ventricular Mass as Revealed on Cine MRI and Real-Time MRI legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Analysis of Significance and Prognostic Value of End-Diastolic Volume, Stroke Volume, Left Ventricular Ejection Fraction and Heart Rate Obtained During Dobutamine Infusion  a",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multivariate Logistic Regression Analyses to Assess the Predictive Value of Electrocardiographic Strain for the Presence of LVH, Abnormal LV Geometry and Abnormal LV Midwall Function in Patients With and Without Evident CHD    legend",
+			"topic_dec": 7,
+			"topic_km": 6,
+			"topic_lda": 5
+		},
+		{
+			"document": "Final Multivariable Cox Regression Model of Predictors of Death Among 1,953 Children With DCM Not Undergoing Heart Transplantation",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multivariable Analysis for Independent Predictors of Survival in HFpEF Patients With CAD  (Cox Proportional Hazard Model)",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Cox proportional hazard analysis for the effect of covariates on survival in patients with chronic heart failure  (SOLVD)",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multiple Linear Regression Analysis of Clinical and Hemodynamic Variables and Follow-Up Left Ventricular Ejection Fraction  legend",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Odds Ratios  (With 95% Confidence Intervals)  for Univariate Predictors of Mortality and for Those Same Predictors Together With Log10Troponin in Bivariate Models",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multivariate Cox Proportional Hazards Models for Prediction of Time to Recurrence legend",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Univariate and Multivariate Analysis of Predictive Variables for log Vo 2max/kg2/3",
+			"topic_dec": 3,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Cox Proportional Hazard Models for MR-proANP and NT-proBNP to Predict Survival in Different Subgroups of Patients With Chronic Heart Failure  (Derivation and Validation Samples Combined)",
+			"topic_dec": 5,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Computer Directed and Clinically Directed Stepwise Multiple Logistic Regression and Cox Proportion Hazard Analysis of Determinants of Hard Events in Medically Treated Patients legend",
+			"topic_dec": 6,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multivariate analysis of predictors of ventricular tachycardia, sudden death, and atrial flutter/fibrillation after repair of tetralogy of Fallot",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Unadjusted Cox Proportional Hazards Regression Analysis of Predictors of Death Among 1,953 Children With DCM Not Undergoing Heart Transplantation",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Multivariate Cox Regression Analyses for Peak Vo 2and Ve/Vco 2Slope",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Potential effect of the internet on physical activity interventions  (based on effect estimates from web-based physical activity interventions and other physical activity interventions)  and the potential effect of mobile phones on physical activity interventions  (based on effect estimates from telephone-based physical activity interventions and from other physical activity interventions) , by country income",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Analysis of trends from 19992002 and 200306 for government health expenditure as source  (GHE-S) ; share of general government expenditure spent on health  (GHE-S/GGE) ; share of gross domestic product  (GDP)  spent by government  (GGE/GDP) ; and GDP",
+			"topic_dec": 5,
+			"topic_km": 0,
+			"topic_lda": 2
+		},
+		{
+			"document": "Changes between 2012 and 2017 in the modern contraceptive prevalence rate  (mCPR) , unmet need for modern methods, demand satisfied with modern methods, and the number of women of reproductive age who are married or in a union using modern methods of contraception",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 1
+		},
+		{
+			"document": "Postprandial Changes of Nitrates/Nitrites, Lipoperoxides, and 8-epi Prostaglandin Plasma Levels After the Ingestion of a Phenol-Rich Olive Oil Meal  (400 ppm)  as Compared to a Low Phenol Olive Oil Meal  (80 ppm)",
+			"topic_dec": 5,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Analysis of association between receipt of financial assistance from Janani Suraksha Yojana and intervention coverage and health outcomes by use of two analytical approaches by high-focus, northeast, and non-high-focus states",
+			"topic_dec": 3,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Number  (millions)  of women with an unmet need for modern methods and proportion of those wanting to avoid pregnancy with unmet need for modern methods, by region and subregion and by country income, in 2003, 2008, and 2012",
+			"topic_dec": 7,
+			"topic_km": 5,
+			"topic_lda": 1
+		},
+		{
+			"document": "Aggregate official development assistance to maternal, newborn, and child health, to child health per child, and to maternal and newborn health per livebirth in 2005 and 2006, and percentage change for the two categories between 2003 and 2006",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 2
+		},
+		{
+			"document": "Official development assistance to child health per child and to maternal and neonatal health per livebirth, total to maternal, newborn, and child health in 2007 and 2008, and trends statistics, 200308",
+			"topic_dec": 5,
+			"topic_km": 5,
+			"topic_lda": 2
+		},
+		{
+			"document": "Official development assistance to maternal, newborn, and child health by aid modality and project purpose for the 68 Countdown priority countries, 200308",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 2
+		},
+		{
+			"document": "Official development assistance to maternal, newborn, and child health to the 74 Countdown priority countries by type of aid and purpose of projects between 2003 and 2010",
+			"topic_dec": 3,
+			"topic_km": 5,
+			"topic_lda": 2
+		},
+		{
+			"document": "Effects of varying selected assumptions on the estimated additional annual running costs of providing child survival interventions at universal coverage, from reported levels in 2000  (US$5134 million)",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Time-series cross-sectional regression results for government health expenditure as source  (GHE-S)  as a share of gross domestic product  (GDP)  for countries in Global Burden of Disease developing regions based on the Arellano-Bover/Blundell-Bond model",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 2
+		},
+		{
+			"document": "Modern contraceptive prevalence rate  (mCPR) , unmet need for modern methods, and demand satisfied with modern methods in 2017 for 68 Family Planning 2020 countries",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 1
+		},
+		{
+			"document": "Numbers and incident rate ratios for recorded referrals and identifications of women experiencing domestic violence in general practice and domestic violence referrals received by specialist agencies, 12 months after intervention",
+			"topic_dec": 0,
+			"topic_km": 0,
+			"topic_lda": 2
+		},
+		{
+			"document": "Number  (millions)  of women using modern methods and proportion of those wanting to avoid pregnancy using modern methods, by region and subregion and by country income in 2003, 2008, and 2012",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 1
+		},
+		{
+			"document": "Estimated annual running costs of providing preventive interventions for child survival at 2000 coverage levels and universal coverage levels",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Antipneumococcal IgG antibody responses 1 month after booster vaccination with PHiD-CV and DTPa-HBV-IPV/Hib with or without prophylactic administration of paracetamol  (ATP immunogenicity cohort)",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Official development assistance to maternal, newborn, and child health by type and source of aid flow for the 68 Countdown priority countries, 200308",
+			"topic_dec": 3,
+			"topic_km": 5,
+			"topic_lda": 2
+		},
+		{
+			"document": "Health service resource use: mean  (SD)  resource use per patient and unit costs of resource items by type of care  (UK, 2009 prices)",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 1
+		},
+		{
+			"document": "Antibodies to neuronal antigens in cerebellar syndromes   Sera were screened by routine immunohistochemistry on frozen sections of rat cerebellum and positive staining patterns1 were confirmed, as appropriate, by western blotting on rat cerebellar extracts or recombinant Hu or Yo polypeptides. VGCC antibodies were measured by immunoprecipitation of 125I--conotoxin MVIIC-labelled VGCCs extracted from human cerebellum,  2   and antibodies to glutamic acid decarboxylase measured with a commercial kit  (RSR Ltd, Cardiff, UK) .",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Direct health-care costs attributable to physical inactivity paid by the public sector, private sector, and households, by country and WHO region  (in 1000 Int$, 2013)",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 1
+		},
+		{
+			"document": "Ranking of research priorities for development of interventions to reduce stillbirths in low-income and middle-income countries",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 1
+		},
+		{
+			"document": "Rankings of research priorities for implementation of interventions to reduce stillbirths in low-income and middle-income countries by 2015",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 1
+		},
+		{
+			"document": "Worldwide official development assistance to maternal, newborn, and child health by type of aid and purpose of projects between 2003 and 2006",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 2
+		},
+		{
+			"document": "Official development assistance to reproductive health to the 74 Countdown priority countries by type of aid and purpose of projects, 200910",
+			"topic_dec": 3,
+			"topic_km": 5,
+			"topic_lda": 2
+		},
+		{
+			"document": "OPA responses 1 month after booster vaccination with PHiD-CV and DTPa-HBV-IPV/Hib with or without prophylactic administration of paracetamol  (ATP immunogenicity cohort)",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Estimated number of neonatal deaths in 75 countries by region that could be averted by universal  (99% coverage)  delivery of all  *   evidence-based interventions",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Percentage distribution of women in developing countries using modern contraceptives, by type of method, region and subregion, and country income, in 2003, 2008, and 2012",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 1
+		},
+		{
+			"document": "Antipneumococcal IgG antibody responses 1 month after primary vaccination with PHiD-CV, DTPa-HBV-IPV/Hib, and human rotavirus vaccine with or without prophylactic administration of paracetamol  (ATP immunogenicity cohort)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Estimated annual running costs of delivering treatment interventions for child survival at 2000 coverage levels and universal coverage levels",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Neglected low-cost opportunities and high-cost interventions in south Asia and sub-Saharan Africa",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Estimates and uncertainty intervals of the number of MWRA  (millions)  aged 1549 years, for total contraceptive use, unmet need, total demand, and unmet need for modern methods, for 2010 and 2015",
+			"topic_dec": 7,
+			"topic_km": 5,
+			"topic_lda": 1
+		},
+		{
+			"document": "Serum-antibody concentrations against capsular polysaccharide of Haemophilus influenzae type b  (PRP)  in Chilean infants given different primary immunisation regimens of PRP-T and PRP-CRM197 conjugate vaccines",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Estimated odds ratios  (95% CI)  for prevalence of respiratory symptoms and decrease in peak expiratory flow  (PEF)  with increase in air pollutants in children with BHR and relatively low serum total IgE  (n=67)",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 1
+		},
+		{
+			"document": "Official development assistance to maternal, newborn, and child health by donor for the 68 Countdown priority countries, 200308",
+			"topic_dec": 4,
+			"topic_km": 5,
+			"topic_lda": 2
+		},
+		{
+			"document": "Change in numbers of sexual partners and prevalence of sexual practices, behaviours, and attitudes in Natsal-3 and Natsal-1 relative to Natsal-2, by sex",
+			"topic_dec": 0,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Birthweights of children born to mothers with chronic pregnancy-associated P falciparum malariaaccording to mothers' plasma IgG concentration with specificity for type of VSA",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Estimated odds ratios for prevalence of respiratory symptoms and decrease in peak expiratory flow  (PEF)  with increase in air pollutants in children without BHR but with relatively high serum total IgE  (n=104)",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 1
+		},
+		{
+			"document": "AUC of the Different Parameters After the Ingestion of a Phenol-Rich Olive Oil Meal  (400 ppm)  as Compared to a Low Phenol Olive Oil Meal  (80 ppm)",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Estimated preterm birth rates and total number of preterm births for 2010, by Millennium Development Goal region",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Serum concentrations of antibodies against individual pneumococcal vaccine serotypes and protein D one month after the third protein D conjugate vaccine dose and before and 1 month after booster vaccination*",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Estimated odds ratios  (95% CI)  for prevalence of respiratory symptoms and decrease in peak expiratory flow  (PEF)  with increase in air pollutants in children with BHR and relatively high serum total IgE  (n=121)",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 1
+		},
+		{
+			"document": "Antibody responses after primary vaccination with PHiD-CV, DTPa-HBV-IPV/Hib, and human rotavirus vaccine with or without prophylactic administration of paracetamol  (ATP immunogenicity cohort)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Percentage of ever-partnered women reporting selected symptoms of ill health  *   according to experience of physical or sexual violence, or both, by an intimate partner, by site",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Median price ratios  *   of originator brands and lowest-priced generics in the private sector, and of lowest-priced generics in the public sector, by WHO Region",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Antibody responses after booster vaccination with PHiD-CV and DTPa-HBV-IPV/Hib with or without prophylactic antipyretic administration  (ATP immunogenicity cohort)",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Comparison of mean adjusted death rate, mean number of acute-care hospital beds, mean number of surgeons, and mean total Medicare-enrollee reimbursements by regions of high, middle, and low adjusted surgical intensity at the end of life",
+			"topic_dec": 7,
+			"topic_km": 4,
+			"topic_lda": 1
+		},
+		{
+			"document": "OPA responses 1 month after primary vaccination with PHiD-CV, DTPa-HBV-IPV/Hib, and human rotavirus vaccine with or without prophylactic administration of paracetamol  (ATP immunogenicity cohort)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Proportion of women with polycystic ovaries, mother's weight, body-mass index, and mean concentrations of plasma LH and testosterone according to birthweight among women whose mothers' weight in pregnancy was above 58 kg  (median)",
+			"topic_dec": 5,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Analysis of association between receipt of financial assistance from Janani Suraksha Yojana and intervention coverage and health outcomes by use of three analytical approaches at the national level",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Treatment efficacy at week 36 for the modified intention-to-treat population in the open-label period and at week 88 for the modified intention-to-treat subpopulations in the double-blind period",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Overview of treatment-emergent adverse events grade 12  (occurring in 10% of patients) , all grade 3 and worse adverse events, and all serious adverse events",
+			"topic_dec": 1,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Most common adverse events, grade 3 or worse adverse events, and serious adverse events during the overall treatment period  (neoadjuvant and adjuvant)",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Drug-related adverse events occurring at any grade in at least 10% of patients, or at grade 3 or higher in any patients in either group, from the start of treatment to 30 days after the end of treatment  (safety population)",
+			"topic_dec": 1,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Drug-related treatment-emergent adverse events by MedDRA system organ class and preferred term in the first on-study chemotherapy cycle  (safety population)",
+			"topic_dec": 4,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events and treatment-emergent drug-related adverse events  *    (safety population)",
+			"topic_dec": 0,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Adverse events  (any grade)  experienced by 15% or more of patients in either treatment group, and CTCAE grade 3 or higher events occurring in 3% or more of patients in either group",
+			"topic_dec": 1,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "MedDRA Summary of Treatment Emergent Adverse Events Occurring in >3% in Either Treatment Group by Primary System Organ Class and Preferred Term: All Subjects Population",
+			"topic_dec": 4,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Safety endpoints and treatment-emergent adverse events of special interest, by treatment assignment over weeks 010  (study part 1)  and weeks 1020  (study part 2)",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events possibly or probably related to treatment in at least 1% of patients  (intention-to-treat population)",
+			"topic_dec": 0,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events occurring in 10% or more of patients in either group during the double-blind period  (safety population)",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events in every treatment group during the 12-week treatment period  (safety population)",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Grade 12 adverse events occurring in 10% or more of patients and all grade 35 adverse events in the fulvestrant plus palbociclib safety population  (all causalities and all cycles)",
+			"topic_dec": 0,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events reported by 2% of patients in either treatment group during the double-blind maintenance period",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Overall Incidence of AEs, Discontinuations Due to AEs, and AEs Occurring in 2% of Patients During the Double-Blind Treatment Period  (Safety Population, n = 672)",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Recurrence-free survival, distant metastasis-free survival, and overall survival in the intention-to-treat population",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "All serious adverse events, adverse events occurring in 10% or more of patients in any treatment group, and adverse events of special interest",
+			"topic_dec": 0,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Most common adverse events leading to everolimus and exemestane discontinuation, dose adjustment, or dose interruption, with suspected relation to everolimus  (safety population, n=92)",
+			"topic_dec": 6,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Adverse events  *   of more than 2% difference between treatment groups  (for all grade adverse events)  and adverse events of CTC grade 3  (EFS population)",
+			"topic_dec": 0,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Serious adverse events and most common adverse events related or possibly related to treatment  (ITT population)",
+			"topic_dec": 0,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-related adverse events of any grade reported in at least 10% of patients and all grade 34 events in 78 patients who received nivolumab",
+			"topic_dec": 2,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events group in all participants who received 1 dose of study drug  (occurring in 5% in either treatment)",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events, irrespective of association with study drug, by preferred term  *   and treatment  (safety set)",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Most common adverse events by treatment group, reported by 15% of patients at any grade or by 3% of patients at grade 3 severity  (safety population)   *",
+			"topic_dec": 1,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Drug-related adverse events  (10% of patients in either treatment group with grade 12 and all grade 3 adverse events; NCI CTCAE 3.0)",
+			"topic_dec": 1,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-related select adverse events and treatment-related adverse events leading to discontinuation of both study drugs",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Summary of total adverse events and treatment-related adverse events through week 96 in the safety maintenance population",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Grade 3 or 4 and serious adverse events and reactions, and adverse events leading to quinacrine discontinuation or dose reduction",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Overall survival in all randomly allocated patients who received at least one dose of study treatment in the intention-to-treat population",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 6
+		},
+		{
+			"document": "Adverse events reported by 10% or more patients for grades 1 and 2 and all adverse events for grades 35  (safety population)",
+			"topic_dec": 1,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Adverse events of 10% incidence in either treatment group or grade 3, 4 adverse events of 05% incidence in either treatment group  (safety set)",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Drug-related adverse events  (10% of patients in either treatment group with grade 12 and all grade 3 adverse events) .",
+			"topic_dec": 1,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Grade 3 and 4 adverse events  *   experienced by 2% or more of patients and adverse events leading to treatment discontinuation, after randomisation to rituximab maintenance or observation",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Common adverse events  (10% in either treatment group)  reported up to 28 days after study drug discontinuation  (safety population)",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events  (MedDRA HLT or PT)  occurring in 5% or more of patients in the placebo or combined dupilumab doses groups  *",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Overview of incidence of treatment-emergent adverse events by treatment at adverse event onset by system organ class",
+			"topic_dec": 0,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Overall incidence of treatment-emergent adverse events occurring in 10% or more of patients who received one or more doses of study drug",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Overview of adverse events, classified by Common Terminology Criteria for Adverse Events  (version 3.0)  in all patients who received at least one dose of study drug",
+			"topic_dec": 1,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Incidence of grade 35 adverse events occurring in 2% or more of patients given chemotherapy with or without bevacizumab after disease progression following first-line bevacizumab-based treatment  (safety population  *  )",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events leading to discontinuation of treatment  (intention-to-treat population)",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Virological response over time  (RVR and SVR12) , and on-treatment failure and relapse, according to treatment group in the intention-to-treat population",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Most common  (10%)  treatment-emergent adverse events by study group and preferred term  (safety population)",
+			"topic_dec": 4,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Overview of treatment-emergent adverse events  (MedDRA preferred terms)  and injection-site reactions  (MeDRA high-level terms)  in the safety population",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events leading to discontinuation of study drug in the safety population  (n=2485)",
+			"topic_dec": 4,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Patients with any adverse event and with grade 34 adverse events related to study treatment  (2-weekly regimen)",
+			"topic_dec": 1,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Incidence of prespecified treatment-emergent adverse events  (preferred terms)  during the double-blind period  (safety population, n=515)",
+			"topic_dec": 4,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Serious adverse events in any treatment group and treatment-emergent adverse events occurring in 5% or more of patients",
+			"topic_dec": 0,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-emergent adverse events of any grade reported in at least 10% of patients in either group in the safety population",
+			"topic_dec": 0,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Proportion of participants experiencing at least one grade 35 adverse event by 52 weeks that was possibly, probably, or definitely related to study treatment using a modified intention-to-treat analysis for a model based on the raw dataset and imputed dataset",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Treatment-related adverse events occurring in 5% of patients in either group from start of treatment to 30 days after end of treatment  (safety population)   *",
+			"topic_dec": 1,
+			"topic_km": 1,
+			"topic_lda": 6
+		},
+		{
+			"document": "Early Clopidogrel and Glycoprotein IIb/IIIa Inhibitor Use in Patients Managed With Early Invasive Strategy  (Cath 48 h From Admission)  Versus Conservative Care  (Cath >48 h After Admission or No Cath)",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Patients With Standardized Criteria for Urgent and Elective Coronary Angiogram, and Rates of Urgent PTCA and CABG Among These Patients During the 28 Days Following Onset of Unstable Angina, by Type of Hospital",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Procedures, Complications and Clinical Outcomes of Patients at Hospital Discharge in Invasive and Conservative Therapy Groups Following Matching by Propensity Analysis",
+			"topic_dec": 7,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "A Summary of Time Frames of PTCA, Surgery, Antiplatelet Therapy and Complications in Patients Who Experienced Major Complications After Noncardiac Surgery Preceded by Intracoronary Stent Placement legend",
+			"topic_dec": 7,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Effect of Intravenous Losartan  (1.0 mg/kg + 0.03 mg/kg/min) , EXP3174  (0.1 mg/kg + 0.01 mg/kg/min) , Captopril  (1.0 mg/kg + 0.5 mg/kg/h)  or Vehicle on Cardiac Electrophysiologic Parameters in Postinfarction Dogs legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 7
+		},
+		{
+			"document": "Plasma Renin Activities in Postinfarction Dogs Administered Intravenous Losartan  (1.0 mg/kg + 0.03 mg/kg/min) , EXP3174  (0.1 mg/kg + 0.01 mg/kg/min) , Captopril  (1.0 mg/kg + 0.5 mg/kg/h)  or Vehicle legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 7
+		},
+		{
+			"document": "Effect of Intravenous Losartan  (1.0 mg/kg + 0.03 mg/kg/min) , EXP3174  (0.1 mg/kg + 0.01 mg/kg/min) , Captopril  (1.0 mg/kg + 0.5 mg/kg/h)  or Vehicle on the Incidence of Lethal Ischemic Arrhythmias Developing in Response to Secondary Acute Posterolateral Myocardial Ischemia in Postinfarction Dogs",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 7
+		},
+		{
+			"document": "Initial Procedural Outcome  (Among 608 CABG and PTCA Patients With IR Intended and 579 PTCA Patients With CR Intended if Randomized to PTCA Who Received Their Assigned Treatment)  legend",
+			"topic_dec": 0,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Ischemic and Bleeding Outcomes 12 to 30 Months After Coronary Stent Treatment in all Randomized Patients, Stratified by Presentation With Versus Without Acute Myocardial Infarction",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Death, MI, or Refractory Ischemia or Major Bleeding in Patients Undergoing PCI by Loading Dose of Clopidogrel or Type of GP IIb/IIIa Inhibitor",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Procedures, Complications and Clinical Outcomes of Patients at Hospital Discharge in Invasive and Conservative Therapy Groups *",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Effect of Intravenous Losartan  (1.0 mg/kg + 0.03 mg/kg/min) , EXP3174  (0.1 mg/kg + 0.01 mg/kg/min) , Captopril  (1.0 mg/kg + 0.5 mg/kg/h)  or Vehicle on Sinus Heart Rate, Mean Arterial Pressure and Electrocardiographic Intervals in Postinfarction Dogs legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 7
+		},
+		{
+			"document": "Intraoperative and Postoperative Complications for Patients Undergoing Off-Pump and On-Pump CABG Surgery in New York State, 19972000",
+			"topic_dec": 6,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Risk of THV Thrombosis in Relation to Post-TAVR Antithrombotic Therapy Until 1- to 3-Month Post-TAVR Follow-Up  (Routine Follow-Up Visit 1)",
+			"topic_dec": 1,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Death, MI, Refractory Ischemia, Major Bleeding, and Net Clinical Outcome at 30 Days in Those Treated With a GP IIb/IIIa Inhibitor",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "In-Hospital Course of Patients With Acute Myocardial Infarction and Cardiogenic Shock Treated With or Without Intraaortic Balloon Counterpulsation",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Sensitivity analysis and 1-year mortality in all patients and in patients who survived until day 14, day 30, day 60, and day 90 after acute myocardial infarction  (AMI)",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Mortality Over Time Among All Patients in PCI Studies Randomizing Patients to Standard Therapy or Standard Therapy Plus Abciximab With a 12-h Infusion After PCI  (Excludes Patients Not Randomized to a Common Intervention [EPISTENT PTCA/Abciximab Group])  legend",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Community Hospital Complications of Patients With Acute Myocardial Infarction and Cardiogenic Shock Treated With or Without Intraaortic Balloon Counterpulsation",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Neurological presentations of 424 patients with gluten sensitivity, who presented with neurological dysfunction and were seen in the gluten sensitivity/neurology clinic, in Sheffield, UK, from 1994 to 2009",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Revascularization Procedures in Post-Lytic NQMI Patients Randomized to Invasive  (INV)  or Conservative  (CON)  Management Strategies legend",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Early and Late Outcomes of Hospital Survivors of AMI and Cardiogenic Shock According To Myocardial Infarction Type",
+			"topic_dec": 7,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "In-Hospital Outcomes of Elderly Patients  (65 years old)  With or Without Previous Angina 48 Hours Before Acute Myocardial Infarction",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Clinical Outcomes at 30 Days According to Consistent Therapy on Enoxaparin Versus Switch From Enoxaparin to Bivalirudin",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Clinical Outcomes Stratified by Stent Type and Peri-Procedure Administration of Platelet Glycoprotein IIb/IIIa Inhibitors",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 7
+		},
+		{
+			"document": "In-Hospital Bleeding Complications of Patients With ST Segment Elevation Myocardial Infarction According to Thrombolytic and Antithrombin Therapy",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Comparison of Admitting Diagnosis and Initial Hospital Bed Assignments of 29,585 Patients With LBBB and Acute MI in the National Registry for Myocardial Infarction 2  (June 1, 1994March 31, 1998)  legend",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "30-Day and Long-Term Reinfarction According to Degree of ST-Segment Resolution at 90 Min and 4 Hours After Initiation of Reperfusion Therapy",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 7
+		},
+		{
+			"document": "Comparison of Treatments Received by 29,585 Patients With Acute MI and LBBB With and Without Chest Pain in the National Registry for Myocardial Infarction 2  (June 1, 1994March 31, 1998)  legend legend",
+			"topic_dec": 3,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Clinical Outcomes at Day 9 in Patients Undergoing Early PCI  (Within 24 h of Randomization)",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Serial Electrocardiographic Changes in Patients With Suspected Acute Myocardial Infarction Who Were Not Receive Randomized to Prehospital Versus In-Hospital Thrombolysis",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Clinical Outcomes at 30 Days in Patients With ST Segment Elevation Myocardial Infarction According to Thrombolytic and Antithrombin Therapy",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Landmark Analysis of the Risk of Clinical Endpoints for Patients With and Without DM Treated With>12 Months Versus12Months of Clopidogrel After IndexPercutaneous Coronary Revascularization With BMS",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Protective Role of Angina 48 Hours Before Acute Myocardial Infarction in Adult and Elderly Patients: Adjusted Regression Model for In-Hospital Death and Congestive Heart Failure or Shock and Combined End Points  (in-hospital death, congestive heart failure or shock)   a",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 0
+		},
+		{
+			"document": "Protective Role of Angina 48 Hours Before Acute Myocardial Infarction in Adult and Elderly Patients: Unadjusted Regression Model for In-Hospital Death and Congestive Heart Failure or Shock and Combined End Points  (in-hospital death, congestive heart failure or shock)",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 0
+		},
+		{
+			"document": "In-Hospital Clinical Outcomes of Patients Undergoing Isolated Tricuspid Valve Surgery From 2004 to 2013  (Unweighted)",
+			"topic_dec": 6,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Short-Term and Long-Term Major Adverse Clinical Events in PCI Patients",
+			"topic_dec": 5,
+			"topic_km": 1,
+			"topic_lda": 7
+		},
+		{
+			"document": "Early and Systematic Versus Guided or Delayed PCI  (Stent Era and Balloon Era)  After Fibrinolysis for STEMI",
+			"topic_dec": 3,
+			"topic_km": 0,
+			"topic_lda": 7
+		},
+		{
+			"document": "Effect of Surgery on Exercise Parameters in Patients Undergoing Mitral Valve Replacement and Patients Undergoing Mitral Valve Repair legend",
+			"topic_dec": 6,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Individual Event Rates  (Event/Month)  and Therapy Episodes  (Episode/Month)  of Patients Pre- and Post-CRT Implantation",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Complications of Thrombolytic Therapy of Prosthetic Valve Thrombosis in 107 Patients",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Clinical Outcomes in Surgically and Nonsurgically Treated Patients After Acute Myocardial Infarction",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Effects of aspirin on bleeding episodes and related complications in elective-arthroplasty patients up to day 35",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Hierarchical Incidence of MACE During Hospitalization and 12-Month Follow-Up in Patients With Successful Recanalization of a CTO",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "1-Year Clinical Outcomes in Patients With In-Hospital Versus Out-of-Hospital Definite/Probable Stent Thrombosis",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "30-Day and 1-Year Event Rates According to the Occurrence of Major VC Versus No Major VC Up to 30 Days",
+			"topic_dec": 5,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "In-Hospital Invasive Coronary Procedures, Medications, Complications and Mortality of Patients Treated or Not Treated by Acute Reperfusion legend",
+			"topic_dec": 7,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Ischemic and Bleeding Outcomes in all Randomized Patients, According to Acute Myocardial Infarction Status, From12 to 30 Months After Coronary Stent Treatment",
+			"topic_dec": 7,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Reported Cause of Death and Procedures Performed in Post-Lytic NQMI Patients Randomized to Invasive  (INV)  and Conservative  (CON)  Management Strategies legend",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Study Endpoints in Matched Patients: Admission Rate, Length of Stay, MACE, Additional Patient Follow-Up, and Downstream Resource Utilization With CCTA Versus Standard Evaluation  (Both, n= 894)",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "5-year relative survival  (%)  by use of state-specific and race-specific life tables and age-standardised to ICSS weights  *   with 95% CIs     for adults  (aged 1599 years)  diagnosed with cancer of the breast  (women) , colon, rectum, or prostate during 199094 and followed up to Dec 31, 1999, by ra US populations",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Decomposition analysis of the change of global disability-adjusted life years  (thousands)  by level 1 causes from 1990 to 2010 into total population growth, population ageing, and changes in age-specific, sex-specific, and cause-specific disability-adjusted-life-year rates",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Global all-age attributable deaths and DALYs, in 2006 and 2016, and percentage change of deaths, age-standardised death rates, DALYs, and age-standardised DALY rates between 2006 and 2016, for all risk-outcome pairs, both sexes combined",
+			"topic_dec": 1,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "40-year trends in the index of net survival for all cancers combined at 1, 5, and 10 years after diagnosis in adults  (1599 years)  in England from 1971 to 2011 and trends in the age-adjusted net survival for 21 selected cancers in England from 1971 to 2011 by sex",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Age-standardised 5-year net survival  (%)  with 95% CI: adults  (1599 years)  diagnosed with one of eight common malignancies  (oesophagus, stomach, colon, rectum, liver, pancreas, lung, or melanoma of the skin)  by continent, country, and calendar period of diagnosis",
+			"topic_dec": 5,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "40-year trends in the index of net survival for all cancers combined at 1, 5, and 10 years after diagnosis in adults  (1599 years)  in Wales from 1971 to 2011 and trends in the age-adjusted net survival for 21 selected cancers in Wales from 1971 to 2011 by sex",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "5-year relative survival  (%) , age-standardised to ICSS weights  *   with 95% CIs for adults  (aged 1599 years)  diagnosed with cancer of the breast  (women) , colon, rectum, or prostate during 199094 and followed up to Dec 31, 1999: continent, country, and region",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Age-adjusted annual incidence and mortality rates  (per 100000 person-years) , disability-adjusted life-years  (DALYs)  lost, prevalence  (per 100000 people) , and mortality-to-incidence ratio  (MIR)  by age groups in high-income and low-income and middle-income countries, and globally in 1990, 2005, and 2010",
+			"topic_dec": 7,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Observed  (obs)  number of sibling pairs with cancer and standardised incidence ratios  (SIR)  in siblings of children with cancer, followed-up in childhood and adolescence, stratified by type of cancer of index patient",
+			"topic_dec": 5,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Male dose-related excess mortality in ever-drinkers as a proportion of all mortality in male ever-drinkers and never-drinkers, by age and underlying cause of death",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Female dose-related excess mortality in ever-drinkers as a proportion of all mortality in female ever-drinkers and never-drinkers, by age and underlying cause of death",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Top 10 causes of disability-adjusted life-years  (DALYs)  in males, females, and both for ages 1014 years, 1519 years, and 2024 years, 1990, 2005, and 2013",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Age-standardised and sex-standardised mortality ratios of all-cause, suicide-related, and cancer-related mortality in patients with chronic fatigue syndrome, compared with the general population in England and Wales in 2011",
+			"topic_dec": 0,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "5-year age-standardised net survival for adults  (aged 1599 years)  diagnosed with one of ten common malignant diseases and children  (aged 014 years)  with ALL, by continent, country, and calendar period of diagnosis",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Global life expectancy at birth and at age 50, age-standardised death rates, age-standardised YLL rate, and total deaths, by sex, 19802015",
+			"topic_dec": 7,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Observed and expected deaths from breast cancer in the initial cohort within 16 years and rate ratios  (intervention centres vs combined comparison centres)  for cases diagnosed within 7 and 10 years of date of entry",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Life years lost and excess life years lost by cause of death in people with and without mental disorders",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Adjusted hazard ratios  (HRs)  for mortality in relation to childhood BMI and BMI change during puberty for 37672 Swedish men followed for a mean of 378 years after age 20 years",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Standardised incidence ratios  (SIRs)  for nervous-system tumour types subdivided by age at diagnosis in offspring with a sibling diagnosed with any nervous-system tumour",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Male relative risk of death at ages 1574 years, by proxy-reported alcohol intake  (other drinkers vs reference drinkers, excluding never-drinkers)  and certified cause  (other causes vs control diseases)",
+			"topic_dec": 1,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Unadjusted and Adjusted Association of Heart Rate Variability Variables With All-Cause Mortality, Cardiac Mortality, Sudden Cardiac Mortality, Sudden Cardiac Autopsy-Verified Mortality, Sudden Cardiac Mortality for Both Genders, Nonsudden Cardiac Mortality and Nonsudden Cardiac Mortality With Cerebrovascular Mortality legend legend",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 0
+		},
+		{
+			"document": "Observed  (O)  and expected  (E)  numbers of cancers, standardised incidence ratio  (SIR)  with 95% CI for colorectal cancer in first-degree relatives of patients with either ulcerative colitis or Crohn's disease in Sweden 195595",
+			"topic_dec": 5,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Global deaths, age-standardised death rates per 100000, YLL numbers, and age-standardised YLL rates per 100000, and percent change between 2006 and 2016 for both sexes combined for all GBD causes and levels 1 through 4 of the cause hierarchy",
+			"topic_dec": 5,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Observed  (obs)  and expected  (exp)  numbers and standardised incidence ratios  (SIRs)  for all cancers in 42277 siblings of children with cancer, stratified by age at diagnosis",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Female relative risk of death at ages 1574 years, by proxy-reported alcohol intake  (other drinkers vs reference drinkers, excluding never-drinkers)  and certified cause  (other causes vs control diseases)",
+			"topic_dec": 1,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Observed  (obs)  number of sibling pairs with cancer and standardised incidence ratios  (SIR)  in siblings of children with cancer, followed-up in adulthood, stratified by type of cancer of index patient",
+			"topic_dec": 5,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Incidence rates  (per 100 person-years)  and HRs for all incident cancers, lung cancers, and non-lung cancers",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Top ten causes of years lost due to disability  (YLDs)  in males, females, and both for ages 1014 years, 1519 years, and 2024 years, 1990, 2005, and 2013",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Age-adjusted rates for all-cause, cardiovascular disease, and ischaemic heart disease mortality by sex-specific ascorbic acid quintile in men and women",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Death rates  (per 1000 person years) , number of deaths, and mortality ratios for various causes of death among men aged 4455 years, according to diabetic  (NIDDM)  and non-diabetic  (non-DM)  status in the Whitehall, Paris Prospective, and Helsinki Policemen studies",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Decomposition analysis of the change of global years lived with disability  (thousands)  by level 1 causes from 1990 to 2010 into total population growth, population ageing, and changes in age-specific, sex-specific, and cause-specific years lived with disability rates",
+			"topic_dec": 5,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Age-standardised 5-year net survival  (%)  with 95% CI: adults  (1599 years)  diagnosed with one of seven common malignancies  (breast, cervix, ovary, prostate, brain, myeloid, and lymphoid)  and children  (014 years)  diagnosed with one of three common malignancies  (brain, acute lymphoblastic leukaemia, and lymphoma)  by continent, country, and calendar period of diagnosis",
+			"topic_dec": 7,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Decomposition analysis of the change of DALY numbers  (thousands)  by level 1 causes from 1990 to 2010 into total population growth, population ageing, and changes in age-specific, sex-specific, and cause-specific DALY rates for the Arab world",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Unadjusted breast-cancer incidence and mortality from incident tumours, with unadjusted and adjusted relative risks of breast-cancer death",
+			"topic_dec": 1,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Relative risks  (95% CIs)  of death from all causes, cardiovascular disease  (CVD) , coronary heart disease  (CHD) , stroke, and external causes by typical dose per occasion in men who drink at least once a month",
+			"topic_dec": 2,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Substance use disorders as predictors of all-cause mortality, suicide, and deaths from accidents in people with schizophrenia, bipolar disorder, or depression",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Observed and expected deaths from breast cancer  (diagnosed in all years)  in the initial cohort within 16 years, andrate ratios  (intervention centres vs combined comparison centres)",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Age-standardised death rates, YLLs, and YLDs, and life expectancy at birth and HALE at birth for 1990 and 2010 for both sexes combined",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Deaths  (in thousands)  and age-standardised death rates per 100000 for 231 causes in 1990 and 2010 for all ages, both sexes combined, and percentage change from 1990 to 2010 in China",
+			"topic_dec": 5,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Cardiovascular disease mortality according to overweight at age 8 years  (childhood)  or at age 20 years  (young adult age) , or both",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Crude and adjusted hazard ratios  (95% CI)  for death from any cause, death due to IHD, and admission for or death from IHD related to absolute values of birthweight",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 0
+		},
+		{
+			"document": "Comparison of time trends in premature mortality before and during the 2008 economic crisis, by cause of death  (ICD-10)   *   and socioeconomic groups     and household car ownership, in the 2001 Spanish Census Cohort of people aged 1074 years",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Relative risks  (95% Cis)  of death from all causes, cardiovascular diseases, and coronary heart disease, by frequency of drinking, stratified by typical dose per drinking occasion-drinkers only",
+			"topic_dec": 1,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Relative Rates  (95% CI)  of CVD Mortality, Incident CHD, and Total Mortality in Gender-Specific Quintiles of the Heart Rate-Adjusted QT",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Standardised incidence rates for endometrial and breast cancer per 1000 women over a 5-year period in current users and never users of HRT at recruitment",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Exposure rates and odds ratios for wheeze and skin sensitivity to D pteronyssinus adjusted for age, sex, and urban or rural residence",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Global deaths, disability-adjusted life-years, and age-standardised rates attributable to ambient particulate matter pollution in 2015",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Global deaths for 235 causes in 1990 and 2013 for all ages and both sexes combined and age-standardised death rates",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Adjusted incidence rates, hazard ratios, and 95% CIs for cigarette smoking and lung cancer by sex",
+			"topic_dec": 6,
+			"topic_km": 4,
+			"topic_lda": 2
+		},
+		{
+			"document": "Crude and adjusted hazard ratios  (95% CI)  for death from any cause, death due to IHD, and admission for or death from IHD in relation to combinations of adverse obstetric outcomes",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 4
+		},
+		{
+			"document": "Diagnostic performance of Xpert MTB/RIF assay compared with smear microscopy, Lwenstein-Jensen medium, and Bactec MGIT960 system",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 5
+		},
+		{
+			"document": "Subset Intravascular Ultrasound Analyses of Changes in the Cross-sectional Area of Lumen External Elastic Membrane and Plaque+Media  legend",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Diagnostic accuracy of PECARN, CATCH, and CHALICE clinical decision rules when analysed using rule-specific inclusion criteria, exclusion criteria, predictor variables, and outcome measures",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 7
+		},
+		{
+			"document": "Diagnostic performance of Xpert MTB/RIF assay compared with the combined reference standard  (smear microscopy, Lwenstein-Jensen medium, and Bactec MGIT960 system)",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 5
+		},
+		{
+			"document": "Per-protocol relative sensitivity and PPV of HPV versus Pap for a CIN2 or worse endpoint in different age groups with different cutoffs of HPV tests",
+			"topic_dec": 5,
+			"topic_km": 3,
+			"topic_lda": 6
+		},
+		{
+			"document": "values on agreement of goitre diagnosis between examiners A, B, and C, between different classification systems in morning sessions, and between morning and afternoon sessions with the same classification system",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 1
+		},
+		{
+			"document": "Axial Distribution of the Changes in Lumen, External Elastic Membrane and Plaque Plus Media Cross-Sectional Areas  (according to individual slices)",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Proportion of participants reporting at least one severe rotavirus gastroenteritis  (RVGE)  episodes  (per protocol clinical definition)  and vaccine efficacy against severe RVGE during three efficacy periods  (according-to-protocol cohorts for the 2-years' efficacy subset)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 4
+		},
+		{
+			"document": "Performance of smear microscopy, clinic-based nurse-administered Xpert MTB/RIF, and laboratory-based technician-administered Xpert MTB/RIF, per treatment site and overall",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 5
+		},
+		{
+			"document": "Inclusion and exclusion criteria, predictor variables, and outcome measures of PECARN, CATCH, and CHALICE clinical decision rules  8,9,12",
+			"topic_dec": 3,
+			"topic_km": 0,
+			"topic_lda": 7
+		},
+		{
+			"document": "Efficacy of RIX4414 against severe rotavirus gastroenteritis and severe gastroenteritis during the 2-years' efficacy period  (ATP cohort for the 2-years' efficacy subset)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 4
+		},
+		{
+			"document": "Epinephrine-Induced Changes in the max QTc-e, the min QTc-e, the QTc-eD, the max QTc-p, the min QTc-p, and the QTc-pD, Which Are Obtained From all 87-Leads, in the LQT1, LQT2, and Control Patients legend",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 5
+		},
+		{
+			"document": "Effect of Using Different Cutoff Values for BNP on Sensitivity, Specificity, Positive Predictive Value, Negative Predictive Value, and Accuracy in Predicting Death  (All-Cause Including the Cardiac Death)  in Referred and Not-Referred Groups",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Findings for all 441 women who were negative on initial colposcopy and were called back for a second colposcopy, including four-quadrant cervical biopsies and endocervical curettage, because of unsatisfactory or ASC-H+ cytology, positive careHPV  (RLU/cut-off ratio cut-point of 05) , or positive HC2 findings",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 0
+		},
+		{
+			"document": "Determining Central SBP Cutoff Values Based on the Sensitivity and Specificity Associated With Cuff SBP Cutoff Values for Predicting Cardiovascular Mortality",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Vaccine efficacy against any and severe rotavirus gastroenteritis according to detected rotavirus G types  (according-to-protocol cohort)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 4
+		},
+		{
+			"document": "False-positive recall proportion shown according to double-reading protocols, and comparison of false-positive recall for screening integrating 3D mammography vs standard 2D mammography alone",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 0
+		},
+		{
+			"document": "Comparisons of Area Under the ROC Curve Along With LR+ and LR for BNP or NT-proBNP Assays to Diagnose or Exclude Acute HF in Various Large Trials of Acute Dyspnea",
+			"topic_dec": 3,
+			"topic_km": 0,
+			"topic_lda": 7
+		},
+		{
+			"document": "Sensitivity, Specificity, Positive Prognostic Value and Negative Prognostic Value of the Ability to Exercise to Bruce Stage 3 and a Duke Score 6",
+			"topic_dec": 5,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Vaccine efficacy against any and severe rotavirus gastroenteritis, admission, and medical attention  (according-to-protocol cohort)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 4
+		},
+		{
+			"document": "The Number of Patients With True-Positive, False-Negative, True-Negative, and False-Positive Test Results",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 0
+		},
+		{
+			"document": "Vaccine efficacy against cervical intraepithelial neoplasia grade 2 or more  (CIN2+) , or grade 3 or more  (CIN3+) , colposcopy referrals, and cervical excision procedures associated with human papillomavirus  (HPV) -16/18, five non-vaccine oncogenic types, and irrespective of HPV DNA in lesion",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Relative sensitivity and specificity for CIN2+ and sensitivity for CIN3+ under different screening policies based on 220 CIN2 and 233 CIN3+ histologies detected in 18386 women in the revealed group in round 1",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Individual Components of Secondary Efficacy Endpoint of Persistent WRF",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Sensitivities, specificities, positive and negative predictive values, and probabilities for comparison of differences in sensitivities",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "One-Year Outcomes for the Lean, Overweight, and Obese Categories Stratified by Median BNP  (452 pg/ml)",
+			"topic_dec": 4,
+			"topic_km": 4,
+			"topic_lda": 7
+		},
+		{
+			"document": "Sensitivity, specificity, positive predictive values, and negative predictive values, by CSF -synuclein cutoff value",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Comparison of acid-fast-bacilli smear-positive, smear-negative, and smear-indeterminate patients",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 5
+		},
+		{
+			"document": "Diagnostic sensitivities  (SE) , specificities  (SP) , false-negative  (FN)  and false-positive  (FP)  cases in each conventional BIT subtest and in combinations of two and three subtests  (n=52)",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Proportion of participants reporting severe rotavirus gastroenteritis  (RVGE)  episodes with a score of 11, 19 and 20 on the Vesikari scale and efficacy of vaccine during the 2-years' efficacy period  (according-to-protocol cohort for efficacy)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 4
+		},
+		{
+			"document": "Pooled estimates of associations of TP53 codon 72 genotype and cervical histology of 33 studies; and invasive cervical cancer cases of 25 studies in subgroups of HPV status, ethnic group, and different quality criteria",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Interim Operative Procedures Performed in 38 Stage I Operative Survivors Before Stage II Operation",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 7
+		},
+		{
+			"document": "Subgroup Analyses for Death, Major Amputation, Likelihood of Any Revascularization, and Likelihood of Endovascular Revascularization in the Study Cohort on the Basis of A PrioriDefined Subgroups",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Summary of Studies That Used Measured EOAi to Assess VP-PM: Data of Moderate and Severe VP-PM Analyzed Separately",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Ratio of Actual THV Stent Area Measured With CT to Nominal THV Area According to THV Size and Degree of Underfilling",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 2
+		},
+		{
+			"document": "Patients with a positive smear microscopy, Xpert MTB/RIF, or culture result, and days to result, per allocation group",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 5
+		},
+		{
+			"document": "Hazard Ratios for Different Endpoints per 1 SD Increase of ST2 Level or NT-proBNP Level  (on the Log2 Scale)  at Any Point in Time Using Repeated ST2 and Repeated NT-proBNP Measurements in a Joint Model",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 0
+		},
+		{
+			"document": "Stent thromboses according to ARC criteria for definite stent thrombosis and according to per-protocol definitions used in individual trials",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 4
+		},
+		{
+			"document": "Sensitivity, specificity, and positive and negative predictive value for retinopathy at different fasting plasma glucose cutoffs",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Lumen Area, Vessel Area and Plaque Area of Cross Sections Arranged in the Six Sections  legend",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Sensitivity, Specificity, Positive Predictive Value, and Negative Predictive Value of Various Cut-Off Values for the Indicated Parameters",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 0
+		},
+		{
+			"document": "Effect of the 9vHPV vaccine on the incidence of persistent infection, cervical disease, cervical cytological abnormalities, and cervical definitive therapy related to each HPV type in the per-protocol efficacy population",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 4
+		},
+		{
+			"document": "APOE genotypes of AD patients and aged non-AD patients positive or negative for HSV1 in brain  (frontal lobe and temporal lobe)",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 2
+		},
+		{
+			"document": "Efficacy against CIN2+ and CIN1+ associated with HPV16 or HPV18 in the total vaccinated cohort for efficacy",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 4
+		},
+		{
+			"document": "Vaccine efficacy against all-cause severe gastroenteritis and admission  (according-to-protocol cohort for efficacy)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 4
+		},
+		{
+			"document": "Key Eligibility Criteria and Key Exclusion Criteria",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 7
+		},
+		{
+			"document": "Value of the Aortic Effective Regurgitant Orifice Area Calculated With the Proximal Isovelocity Surface Area Method and Quantitative Doppler and Two-Dimensional Echocardiographic Methods in the Overall Study Group and in Subgroups of Patients",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 3
+		},
+		{
+			"document": "Percentage of Total Cross Section Represented by Plaque Area  (Difference Between Lumen Area and Area Delimited by Internal Elastic Lamina)  at Either 7 or 21 Days After Treatment with rhVEGF  (2 g/kg by a Single Intramuscular Injection)  or Albumin legend",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Summary of Studies That Use Measured EOAi to Assess VP-PM: Data of Moderate and Severe VP-PM Are Combined",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Comparison of ARIC JUPITER-Eligible Group, JUPITER Placebo Arm, and JUPITER Treated Arm: Event Rates",
+			"topic_dec": 5,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Per Vessel Territory Diagnostic Accuracy of Coronary Computed Tomography Angiography, Transluminal Attenuation Gradient, Contrast Opacification Difference  (Maximum, Mean, and Minimum) , and Quantitative Coronary Angiography Compared With Fractional Flow Reserve  (N = 78)",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Basal and  () Isoprenaline-Stimulated cAMP-levels of CHW-beta1 Cells in the Presence of Rabbit  (70 nmol/liter) , Mouse  (7 nmol/liter) , or Human Anti-beta1-ECII  (2 mol/liter)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Basal and  () Isoprenaline-Stimulated cAMP-levels of CHW-beta1 Cells in the Presence of Rabbit  (70 nmol/liter) , Mouse  (7 nmol/liter) , or Human Anti-beta1-ECII  (2 mol/liter)",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Comparison of MR, Doppler Echocardiography and Catheterization-Derived Peak Pulmonary Vein Blood Flow Gradients  (mm Hg)  in Patients With Pulmonary Venous Pathway Obstruction",
+			"topic_dec": 4,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Individual Peak Myocardial Videointensity Data  (in gray scale units)  in Middle and Lateral Segments of Original Stenosis Zone and Adjacent Perfusion Bed in the Presence of One- and Two-Vessel Stenosis During Both Rest and Dobutamine Stress Echocardiography",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Peak Tissue Doppler Velocity at Rest and During Dobutamine Stimulation Related to Results of 18F-Fluorodeoxyglucose Positron Emission Tomography for 192 Dyssynergic Segments at Rest",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Comparison of Magnetic Resonance Imaging Findings Based on Dobutamine-Induced Systolic Wall Thickening and End-Diastolic Wall Thickness With Postrevascularization Recovery of Systolic Wall Thickening",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Coronary Flow Velocity Change in Coronary Aneurysms at Rest and Coronary Flow Reserve in 25 Patients With Kawasaki Disease and Aneurysmal Lesions in 29 Coronary Vessels  (group 2)",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Peak Systolic SR Data at Rest and During Dobutamine Stimulation Related to Results of 18F-Fluorodeoxyglucose Positron Emission Tomography for 192 Dyssynergic Segments at Rest",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Forearm Blood Flow During Brachial Artery Infusion of Saline, l-Arginine Alone, Nitroprusside, Acetylcholine and Acetylcholine Plus l-Arginine in Control Subjects and Hypertriglyceridemic Patients",
+			"topic_dec": 4,
+			"topic_km": 6,
+			"topic_lda": 5
+		},
+		{
+			"document": "Coronary Flow Velocity Dynamics in Eight Patients With Kawasaki Disease and Ischemic Findings on Exercise Stress Testing and Normal Coronary Arteries on Angiography  (group 4)",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Variable Inter-Compression Analysis Between the Repeated Measurements  (t1)  of 48 Coronary Obstructions in the Original and the Compressed/Decompressed  (CR 6, 10 and 16)  Image Series and the First Measurements  (t0)  in the Original Image Series legend",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 7
+		},
+		{
+			"document": "Variable Inter-Compression Analysis Between the Repeated Measurements  (t1)  of 48 Coronary Obstructions in the Original and the Compressed/Decompressed  (CR 6, 10 and 16)  Image Series and the First Measurements  (t0)  in the Original Image Series legend",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 7
+		},
+		{
+			"document": "Peak Pulmonary Vein Blood Flow Velocity  (cm/s)  of Patients With Pulmonary Venous Pathway Obstruction from MR Velocity Mapping and Doppler Echocardiography legend legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Sensitivity of Dipyridamole, Dobutamine Stress Echo and Myocardial Perfusion Scintigraphy for the Detection of Isolated Left Anterior Descending Coronary Artery Disease With and Without Multivessel Disease legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Per-Vessel Territory Diagnostic Accuracy of QCA, Coronary CTA, Combined CTA+ CTP, Combined CTA+ TAG320, and MDCT-IP Assessments, Compared With FFR",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Value of Response to Dobutamine at the First Week  (Wall Thickening With Dobutamine >2 mm)  for Predicting Normal Segmental Wall Motion at the Sixth Month  (Wall Thickening >2 mm)  Depending on the Transmural Extent of Necrosis",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Diagnostic Performance of Multislice Spiral Computed Tomography Coronary Angiography for the Detection of Significant Obstructive Lesions",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Contractile Responses to Potassium  (K+125 mmol/liter)  Phenylephrine  (PE, 1 mol/liter)  and Angiotensin II  (1 and 100 nmol/liter) , and Dilator Responses to Acetylcholine  (10 mol/liter)  in Human Internal Mammary Artery Segments From Patients With the DD or the II/ID Genotype legend",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 6
+		},
+		{
+			"document": "Comparison of Thallium-201 and Technetium-99m Tetrofosmin Single-Photon Emission Computed Tomographic Dipyridamole Imaging Data in 364 Scan Segments",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Diagnostic Accuracy of Two-Dimensional Dobutamine Stress Echocardiography, TDI and SRI for Detection of Viability Determined by 18F-Flurodeoxyglucose Positron Emission Tomography",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Variable Inter-Compression Analysis Between the Repeated Calibrations  (t1)  of 48 Catheters in the Original and the Compressed/Decompressed  (CR 6, 10 and 16)  Image Series and the First Calibrations  (t0)  in the Original Image Series legend",
+			"topic_dec": 7,
+			"topic_km": 7,
+			"topic_lda": 7
+		},
+		{
+			"document": "Pulse, Systolic Blood Pressure, End-Tidal Carbon Dioxide Concentration and Arterial Oxygen Saturation at Rest, at 3 Minutes of Exercise, at 6 Minutes of Exercise and at Peak Exercise With Placebo and Dihydrocodeine",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Diagnostic Accuracy of Whole-Heart Coronary Magnetic Resonance Angiography to Detect Stenoses of 50% in 113 Patients Who Completed Acquisition of Coronary Magnetic Resonance Data",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Analysis of Significance and Prognostic Value of Systolic Blood Pressure, Diastolic Blood Pressure and Mean Arterial Blood Pressure Obtained During Dobutamine Infusion  a",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Analysis of the Influence of Coronary Diameter, Image Quality, and Coronary Calcium of the Diagnostic Performance of 64-Slice CTCA for the Detection of 50% Stenosis on QCA in the Per-Segment Analysis  (95% CI)",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Cutpoints for Electron Beam Computed Tomographic Coronary Calcium Scores for Sensitivity of 90% and Associated Specificity and for Electron Beam Computed Tomographic Quantified Coronary Calcium Scores for Specificity of 90% and Associated Sensitivity as a Function of Decade of Associated Maximal Angiographic Lumen Stenoses",
+			"topic_dec": 1,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Relative Coronary Flow Reserves for Adenosine and Papaverine and Volumetric Coronary Flow Reserve for Acetylcholine in Five Patients with the Adenosine Defect and Twenty-Four Control Subjects",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "PET Flow and Glucose Uptake, Percent MIBI Uptake, Ventricular Function and Percent Fibrosis in Anterior Wall Biopsy Specimen",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Relationship Between Coronary Artery Lesions and Perfusion Defects on Thallium-201 Single Photon Emission Computed Tomography",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Intensity of Single-Photon Emission Computed Tomographic Perfusion Defects, Wall Motion Abnormalities and Contrast Effects on Patients in Each Randomized Dosage Group legend",
+			"topic_dec": 7,
+			"topic_km": 6,
+			"topic_lda": 5
+		},
+		{
+			"document": "Comparison Between Intravenous Electron-Beam Coronary Angiography and Selective Coronary Angiography in 221 Segments Comprising the Proximal and Mid Major Coronary Arteries  (eight-segment model)  in 28 Patients  legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Diagnostic Performance of SPECT, CMR, and PET Perfusion Imaging on Patient and Coronary Artery Territory Basis",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Results: Detection of Significant  (50%)  Stenoses With 16-Row Multislice Spiral Computed Tomography Coronary Angiography",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Quantitative Measurements of Wall Thickness, Simulated Wall Motion and Simulated Wall Thickening Using the Variable Thickness Heart Phantom",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Detection of Significant Coronary Stenoses by Electron Beam Computed Tomography Versus Coronary Angiography for 267 Analyzed Segments",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Results of Quantitative Computerized Digital Analysis of Micro-CT Images by Normal and the Balloon-injured Coronary Arteries",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Correlation of Single-Photon Emission Computed Tomography  (SPECT)  With Harmonic Myocardial Contrast Echocardiography in the Triggered Mode, According to the Correlation of SPECT with Wall Motion Analysis  (After Exclusion of Nondiagnostic Studies)  legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Performance Indexes of CTCA and SPECT/CTCA for Detection of Hemodynamically Significant Coronary Lesions in 170 Segments in 44 Patients",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Results of Magnetic Resonance Imaging Parameters and uptake by Positron Emission Tomography, According to Wall Motion",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Mitral Inflow, Pulmonary Venous Flow and Mitral Annulus Velocity in 59 Normal Volunteers",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 5
+		},
+		{
+			"document": "Diagnostic Performance of RT-MCE and SPECT to Detect Significant Coronary Artery Disease in Individual Vascular Territories",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Diagnostic Accuracy of Coronary CTA for the Detection of Acute Coronary Syndrome and Myocardial Infarction During Index Hospitalization Among Patients With Acute Chest Pain Based on the Presence of Any Coronary Plaque or the Presence of Coronary Artery Stenosis  (>50% Luminal Narrowing)",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Results of Coronary Artery Segment Classification and Stenosis Assessment by Contrast-enhanced Magnetic Resonance Coronary Angiography Compared With Conventional Invasive Angiography  (n = 350)  legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Diagnostic Performance of Multi-Slice Computed Tomography Coronary Angiography to Detect 50% Stenoses",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Comparison of MCE, SPECT, Wall Motion and the Combination of MCE and Wall Motion With Results of Coronary Angiography: Analysis by Patients  (n = 44)  legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Per-Vessel Diagnostic Accuracy of CTA+ TAG320, CTA+ CTP, and MDCT-IP Methods in 97 Vessels",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 5
+		},
+		{
+			"document": "Mean Myocardial Perfusion Measures Across Number of Coronary Arteries Containing Calcium  (Coronary Artery Calcium Score >0 in the Respective Artery)  in Subjects With No Clinical Coronary Heart Disease From The Multi-Ethnic Study of Atherosclerosis",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Comparison of Superior Vena Cava Peak Forward and Reverse Flow Velocity in Chronic Obstructive Pulmonary Disease and Constrictive Pericarditis  legend",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Accuracy of Multislice Computed Tomography for the Detection of Significant Coronary Plaque    : Comparison With IVUS for the Entire Region of Interest and for its 5-mm Subsegments",
+			"topic_dec": 7,
+			"topic_km": 3,
+			"topic_lda": 5
+		},
+		{
+			"document": "Overview of Used Risk Scores: Risk Factors Used in CHA2DS2-VASc Risk Score and CHADS2 Risk Score",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Comparison of CHA2DS2-VASc and CHA2DS2-VASc-R Scores in Predicting Stroke: Relative Hazard Associated With 1-Point Increase in Stroke Risk Score, and C-Statistic",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Comparison of CHA2DS2-VASc and CHA2DS2-VASc-R Scores in Predicting Stroke: Relative Hazard Associated With 1-Point Increase in Stroke Risk Score, and C-Statistic",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Hazard of Stroke by Race/Ethnicity, Relative to White Patients, After Controlling for CHA2DS2-VASc Score  (Model 1)  and CHA2DS2-VASc Score Plus Anticoagulant Use  (Model 2)",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Hazard of Stroke by Race/Ethnicity, Relative to White Patients, After Controlling for CHA2DS2-VASc Score  (Model 1)  and CHA2DS2-VASc Score Plus Anticoagulant Use  (Model 2)",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "ORunadjusted and ORadj-2 of morbidity at 30 days for patients with anaemia or risk factors and anaemia and risk factors, compared with reference populations of patients with neither anaemia nor risk factors",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "7-day risk of stroke stratified according to ABCD score at first assessment in all referrals with suspected TIA to OXVASC and risk of stroke before scheduled clinic appointment in all referrals with suspected TIA to the non-OXVASC hospital-referred weekly TIA clinic",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "ORunadjusted and ORadj-2 of mortality at 30 days for patients with anaemia or risk factors and anaemia and risk factors, compared with reference populations of patients with neither anaemia nor risk factors",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Association of Age, Sex, and Race/Ethnicity With ABI Category, and Age-, Sex-, and Race/Ethnicity-Adjusted Distributions of Risk Factors by ABI Category",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Association of TG or TG Genetic Risk Score With CAC 75th Percentile in the FHS",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Relative Risk of Incident CAC and Mean Change in CAC Score With Varying FRS and RRS Groups According to Low- and High-Risk Groups Classified by FRS and RRS, Respectively",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Pooled analysis of the early risk of recurrent vascular events, given per time period after randomisation, in trials of aspirin versus control in secondary prevention after transient ischaemic attack and ischaemic stroke",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Risk of Ischemic Stroke in Patients with an ATRIA Score of 0 to 5, Stratified on the Basis of Their CHA2DS2-VASc Scores",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Western Aphasia Battery  (WAB)  subtest scores before and after resection for patients with dominant hemispheric tumour who were dysphasic  (aphasia quotient <937)  before resection",
+			"topic_dec": 1,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Risk of Ischemic Stroke in AF Female Patients  (CHA2DS2-VASc Score of 2: Female Plus 1 Additional Stroke Risk Factor)",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Western Aphasia Battery  (WAB)  summary scores before and after resection for patients with dominant hemispheric tumour who were dysphasic  (aphasia quotient <937)  before resection",
+			"topic_dec": 1,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Severity and duration of upper-respiratory-tract  (URT)  and lower-respiratory-tract  (LRT)  symptoms associated with rhinovirus infection",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Statistical associations  (p<10107)  between Illumina SNPs and circulating concentrations of LDL cholesterol in a genome-wide meta-analysis of three UK study populations consisting of up to 4337 participants",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 3
+		},
+		{
+			"document": "c statistics  (with 95% CI)  for early stroke discrimination with ABCD2, ABCD2-I, and ABCD3-I scores at each timepoint after transient ischaemic attack",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Association of Lipid Measures or Genetic Risk Scores With CAC 75th Percentile in the Pooled FHS Offspring and Third-Generation Cohorts  (n = 3,110)",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Ischemic Stroke Event Rates Stratified by the Sum of Points for ATRIA, CHADS2, and CHA2DS2-VASc Risk Scores",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Randomised controlled trials included in the systematic review and network meta-analysis",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Statistical associations  (p<10107)  between Affymetrix SNPs and circulating concentrations of LDL cholesterol in a genome-wide meta-analysis of five study populations consisting of up to 11685 participants",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 3
+		},
+		{
+			"document": "Pooled analysis of the effect of any aspirin versus control in secondary prevention after TIA and ischaemic stroke on the early risk of any recurrent ischaemic stroke and on disabling or fatal ischaemic stroke stratified by the nature of the presenting event  (TIA and minor stroke vs major stroke)  and by time from presenting event to randomisation  (14 days vs >14 days)",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Prevalence of Solo and Combination Antiplatelet Prescription in AF Patients at Intermediate to High Risk of Stroke, Stratified by Prescription of Aspirin Versus OAC in the Overall CHADS2 Score2 and CHA2DS2-VASc Score2 Cohorts and Subcohorts of Patients With and Without Any Coronary Heart Disease Risk Equivalent",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Adjuvant radiotherapy received  (within 3 months after surgery) , nodes removed, nodal status, and external-beam radiotherapy  (EBRT)  received in node-positive patients by risk group defined according to ASTEC radiotherapy eligibility",
+			"topic_dec": 1,
+			"topic_km": 6,
+			"topic_lda": 7
+		},
+		{
+			"document": "Distribution of WHODAS disability scores by dementia status and site, and the effects of dementia  (main effect of 10/66 dementia, modified by DSM-IV dementia)  on WHODAS score",
+			"topic_dec": 1,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Drug Prescription Distribution Among Responders by Haplotype Arg389Arg-Ser49Ser  (n = 85)  and Arg389Gly-Ser49Ser  (n = 97)",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Vascular risk factors and retinal vascular signs in patients with lacunar and other ischaemic stroke",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Availability of data from randomised trials that began before 1990 of adjuvant tamoxifen versus no adjuvant tamoxifen",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Western Aphasia Battery  (WAB)  summary scores before and after resection for patients whose language was classified as normal  (aphasia quotient 938)  before resection",
+			"topic_dec": 1,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Imputed SNPs showing genome-wide statistical association  (p<10107)  with circulating concentrations of LDL cholesterol; meta-analysis of four study populations consisting of up to 9988 participants",
+			"topic_dec": 4,
+			"topic_km": 7,
+			"topic_lda": 3
+		},
+		{
+			"document": "Risk of transient ischaemic attack according to use of HRT and identified risk factors in women aged 4564 years",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Prevalence Rates of Major Cardiovascular Risk Factors in Patients With Familial P-CAD and Their Respective Age- and Gender-Matched Control Subjects, According to Parental History of CAD in Patients with Familial P-CAD *",
+			"topic_dec": 2,
+			"topic_km": 6,
+			"topic_lda": 3
+		},
+		{
+			"document": "Independent contributions to the risk of a second ischaemic stroke for prothrombotic risk factors, antithrombotic treatment, and stroke subtypes",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Design of randomised trials of unfractionated heparin compared with placebo or untreated control in acute coronary syndrome without ST elevation",
+			"topic_dec": 7,
+			"topic_km": 0,
+			"topic_lda": 5
+		},
+		{
+			"document": "Discrimination between benign and malignant thyroid lesions by CD44v6 and galectin-3 immunodetection on fresh cytological material from preoperative fine-needle aspiration",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 2
+		},
+		{
+			"document": "Risk of ischaemic stroke subtypes  *   associated with risk factors",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Germline BRCA mutation status according to tumour BRCA mutation status",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Multivariable Logistic Regression Predicting the Likelihood of CAD According to Quartiles of LBP Levels, Markers of Systemic Inflammation, and Established Cardiovascular Risk Factors",
+			"topic_dec": 1,
+			"topic_km": 7,
+			"topic_lda": 3
+		},
+		{
+			"document": "Evaluating the Predictive Ability of the HAS-BLED Score Versus CHADS2 or CHA2DS2-VASc Score for the Detection of MajorBleeding Using C-Statistics, Relative NRI, and IDI Indexes",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Description of haemostatic gene polymorphisms in this review and their associated intermediate phenotypes",
+			"topic_dec": 5,
+			"topic_km": 0,
+			"topic_lda": 3
+		},
+		{
+			"document": "Risk of intracerebral haemorrhage according to use of HRT and identified risk factors in women aged 4564 years",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Prevalence of different risk factors in cryptogenic versus other transient ischaemic attack and ischaemic stroke subtypes",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Women with hormone-receptor-positive tumours and who did not report either symptom at trial entry with vasomotor symptoms or joint symptoms at the 3-month follow-up visit according to treatment group",
+			"topic_dec": 4,
+			"topic_km": 0,
+			"topic_lda": 1
+		},
+		{
+			"document": "Overview of Used Risk Scores: Risk Factors Used in ATRIA Risk Score",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Respiratory-chain enzyme activity in circulating lymphocytes of patients 1 and 3 and of 163 controls",
+			"topic_dec": 5,
+			"topic_km": 6,
+			"topic_lda": 3
+		},
+		{
+			"document": "SLC6A3 mutations identified in patients with dopamine transporter deficiency syndrome",
+			"topic_dec": 6,
+			"topic_km": 6,
+			"topic_lda": 3
+		},
+		{
+			"document": "Relative Risk of Incident CAC Associated With Increasing Risk Categories According to FRS and RRS Classification",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		},
+		{
+			"document": "Mean Change in CAC Score  (Agatston Units)  Associated With Increasing Risk Categories According to FRS and RRS Classification",
+			"topic_dec": 2,
+			"topic_km": 2,
+			"topic_lda": 3
+		}
+	]
+}
