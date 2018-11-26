@@ -78,48 +78,48 @@
 
 <body>
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <div id='container'>
+        <div id='layout-header'>
+            <center>
+                <h1>Topic Modeling Results</h1>
+            </center>
+        </div>
+        <div id='layout-hbar'>
+            <center>
+                <h2>Choose Topic Cluster</h2>
+                <p id='hbar-description'>Topic Keywords based on LDA</p>
+            </center>
+            <div id="hbar_container"></div>
+        </div>
+        <div id='layout-output'>
+            <div id='layout-scatter'>
+                <div style="width: 33%; height: 100%; float: left">
+                    <center>
+                        <h2 style="margin-top: 0px">Model1<br>LDA</h2>
+                        <svg class='layout-scatter' id="scatter_container_lda"></svg>
+                    </center>
+                </div>
+                <div style="width: 33%; height: 100%; float: left">
+                    <center>
+                        <h2 style="margin-top: 0px">Model2<br>K-Means</h2>
+                        <svg class='layout-scatter' id="scatter_container_km"></svg>
+                    </center>
+                </div>
+                <div style="width: 33%; height: 100%; float: left">
+                    <center>
+                        <h2 style="margin-top: 0px">Model3<br>Deep Embedding</h2>
+                        <svg class='layout-scatter' id="scatter_container_de"></svg>
+                    </center>
+                </div>
+                <center><svg id='scatter_legend' style="margin-top: 20px"></svg></center>
+            </div>
+            <div id='layout-table'>
+                <table id="jqGrid"></table>
+                <div id="jqGridPager"></div>
+            </div>
+        </div>
+    </div>
 </body>
-<div id='container'>
-    <div id='layout-header'>
-        <center>
-            <h1>Topic Modeling Results</h1>
-        </center>
-    </div>
-    <div id='layout-hbar'>
-        <center>
-            <h2>Choose Topic Cluster</h2>
-            <p id='hbar-description'>Topic Keywords based on LDA</p>
-        </center>
-        <div id="hbar_container"></div>
-    </div>
-    <div id='layout-output'>
-        <div id='layout-scatter'>
-            <div style="width: 33%; height: 100%; float: left">
-                <center>
-                    <h2 style="margin-top: 0px">Model1<br>LDA</h2>
-                    <svg class='layout-scatter' id="scatter_container_lda"></svg>
-                </center>
-            </div>
-            <div style="width: 33%; height: 100%; float: left">
-                <center>
-                    <h2 style="margin-top: 0px">Model2<br>K-Means</h2>
-                    <svg class='layout-scatter' id="scatter_container_km"></svg>
-                </center>
-            </div>
-            <div style="width: 33%; height: 100%; float: left">
-                <center>
-                    <h2 style="margin-top: 0px">Model3<br>Deep Embedding</h2>
-                    <svg class='layout-scatter' id="scatter_container_de"></svg>
-                </center>
-            </div>
-            <center><svg id='scatter_legend' style="margin-top: 20px"></svg></center>
-        </div>
-        <div id='layout-table'>
-            <table id="jqGrid"></table>
-            <div id="jqGridPager"></div>
-        </div>
-    </div>
-</div>
 
 <script type="text/javascript">
     var margin = {
