@@ -1,7 +1,4 @@
 {
-    "labels": [
-        "Default"
-    ],
     "Default": [
         {
             "Freq": 0.99,
@@ -34,5 +31,272 @@
             "Total": 62
         }
     ],
-    "max_width": NaN
+    "Topic2": [
+        {
+            "Freq": 19.0,
+            "index": 100,
+            "Term": "absolut",
+            "Total": 82
+        },
+        {
+            "Freq": 18.0,
+            "index": 101,
+            "Term": "base",
+            "Total": 127
+        },
+        {
+            "Freq": 17.0,
+            "index": 102,
+            "Term": "carbon",
+            "Total": 70
+        },
+        {
+            "Freq": 15.0,
+            "index": 103,
+            "Term": "glucos",
+            "Total": 30
+        },
+        {
+            "Freq": 11.0,
+            "index": 104,
+            "Term": "anterior",
+            "Total": 71
+        }
+    ],
+    "Topic5": [
+        {
+            "Freq": 42.0,
+            "index": 250,
+            "Term": "privat",
+            "Total": 62
+        },
+        {
+            "Freq": 38.0,
+            "index": 251,
+            "Term": "angiogram",
+            "Total": 56
+        },
+        {
+            "Freq": 33.0,
+            "index": 252,
+            "Term": "base",
+            "Total": 127
+        },
+        {
+            "Freq": 22.0,
+            "index": 253,
+            "Term": "saharan",
+            "Total": 37
+        },
+        {
+            "Freq": 19.0,
+            "index": 254,
+            "Term": "cervic",
+            "Total": 27
+        }
+    ],
+    "Topic3": [
+        {
+            "Freq": 45.0,
+            "index": 150,
+            "Term": "convent",
+            "Total": 57
+        },
+        {
+            "Freq": 27.0,
+            "index": 151,
+            "Term": "status",
+            "Total": 37
+        },
+        {
+            "Freq": 26.0,
+            "index": 152,
+            "Term": "cava",
+            "Total": 28
+        },
+        {
+            "Freq": 17.0,
+            "index": 153,
+            "Term": "adult",
+            "Total": 19
+        },
+        {
+            "Freq": 15.0,
+            "index": 154,
+            "Term": "base",
+            "Total": 127
+        }
+    ],
+    "Topic7": [
+        {
+            "Freq": 6.0,
+            "index": 350,
+            "Term": "base",
+            "Total": 127
+        },
+        {
+            "Freq": 4.0,
+            "index": 351,
+            "Term": "stomach",
+            "Total": 8
+        },
+        {
+            "Freq": 3.0,
+            "index": 352,
+            "Term": "modifi",
+            "Total": 6
+        },
+        {
+            "Freq": 3.0,
+            "index": 353,
+            "Term": "cardiogen",
+            "Total": 4
+        },
+        {
+            "Freq": 2.0,
+            "index": 354,
+            "Term": "natriuret",
+            "Total": 25
+        }
+    ],
+    "max_width": 127,
+    "labels": [
+        "Default",
+        "Topic1",
+        "Topic2",
+        "Topic3",
+        "Topic4",
+        "Topic5",
+        "Topic6",
+        "Topic7",
+        "Topic8"
+    ],
+    "Topic1": [
+        {
+            "Freq": 18.0,
+            "index": 50,
+            "Term": "carbon",
+            "Total": 70
+        },
+        {
+            "Freq": 18.0,
+            "index": 51,
+            "Term": "absolut",
+            "Total": 82
+        },
+        {
+            "Freq": 13.0,
+            "index": 52,
+            "Term": "anterior",
+            "Total": 71
+        },
+        {
+            "Freq": 8.0,
+            "index": 53,
+            "Term": "base",
+            "Total": 127
+        },
+        {
+            "Freq": 7.000000000000001,
+            "index": 55,
+            "Term": "adulthood",
+            "Total": 51
+        }
+    ],
+    "Topic6": [
+        {
+            "Freq": 31.0,
+            "index": 300,
+            "Term": "absolut",
+            "Total": 82
+        },
+        {
+            "Freq": 29.0,
+            "index": 301,
+            "Term": "anterior",
+            "Total": 71
+        },
+        {
+            "Freq": 28.0,
+            "index": 302,
+            "Term": "base",
+            "Total": 127
+        },
+        {
+            "Freq": 27.0,
+            "index": 303,
+            "Term": "carbon",
+            "Total": 70
+        },
+        {
+            "Freq": 11.0,
+            "index": 304,
+            "Term": "perfus",
+            "Total": 42
+        }
+    ],
+    "Topic4": [
+        {
+            "Freq": 4.0,
+            "index": 200,
+            "Term": "solo",
+            "Total": 11
+        },
+        {
+            "Freq": 4.0,
+            "index": 201,
+            "Term": "medra",
+            "Total": 20
+        },
+        {
+            "Freq": 3.0,
+            "index": 202,
+            "Term": "version",
+            "Total": 22
+        },
+        {
+            "Freq": 3.0,
+            "index": 203,
+            "Term": "breast",
+            "Total": 5
+        },
+        {
+            "Freq": 3.0,
+            "index": 204,
+            "Term": "resect",
+            "Total": 21
+        }
+    ],
+    "Topic8": [
+        {
+            "Freq": 45.0,
+            "index": 400,
+            "Term": "adjuv",
+            "Total": 53
+        },
+        {
+            "Freq": 32.0,
+            "index": 401,
+            "Term": "meta",
+            "Total": 44
+        },
+        {
+            "Freq": 19.0,
+            "index": 402,
+            "Term": "accord",
+            "Total": 47
+        },
+        {
+            "Freq": 18.0,
+            "index": 403,
+            "Term": "base",
+            "Total": 127
+        },
+        {
+            "Freq": 16.0,
+            "index": 404,
+            "Term": "gross",
+            "Total": 17
+        }
+    ]
 }
