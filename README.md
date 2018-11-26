@@ -31,7 +31,7 @@
 ## 4. [Text Mining](./Text_Mining)
 
 * [sklearn NLP Module](./Text_Mining/sklearn_nlp.ipynb)
-* [Fast Text](./Text_Mining/Fasttext,ipynb)
+* [Fast Text](./Text_Mining/Fasttext.ipynb)
 * [LDA](./Text_Mining/Topic_Modelling_LDA_ABC_News.ipynb)
 
 ## 5. [Topic Modeling](./Topic_Modeling)
