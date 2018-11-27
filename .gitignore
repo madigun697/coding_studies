@@ -9,6 +9,7 @@ Private_files
 **/__pycache__
 **/mongo_conn.py
 **/db_conn.py
+**/article_db_conn.py
 **/.DS_Store
 **/.ipynb_checkpoints
 cs231n_study/datasets
