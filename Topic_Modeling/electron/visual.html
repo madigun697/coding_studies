@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ url_for('static',filename='css/visual.css') }}" />
 
     <script>window.$ = window.jQuery = require('jquery');</script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="{{ url_for('static',filename='app/js/i18n/grid.locale-en.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static',filename='app/js/jquery.jqGrid.min.js') }}"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -18,6 +19,51 @@
 		$.jgrid.defaults.styleUI = 'Bootstrap';
     </script>
 </head>
+
+<body>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <div id='container'>
+        <div id='layout-header'>
+            <center>
+                <h1>Topic Modeling Results</h1>
+            </center>
+        </div>
+        <div id='layout-hbar'>
+            <center>
+                <h2>Choose Topic Cluster</h2>
+                <p id='hbar-description'>Topic Keywords based on LDA</p>
+            </center>
+            <div id="hbar_container"></div>
+        </div>
+        <div id='layout-output'>
+            <div id='layout-scatter'>
+                <div style="width: 33%; height: 100%; float: left">
+                    <center>
+                        <h2 style="margin-top: 0px">Model1<br>LDA</h2>
+                        <svg class='layout-scatter' id="scatter_container_lda"></svg>
+                    </center>
+                </div>
+                <div style="width: 33%; height: 100%; float: left">
+                    <center>
+                        <h2 style="margin-top: 0px">Model2<br>K-Means</h2>
+                        <svg class='layout-scatter' id="scatter_container_km"></svg>
+                    </center>
+                </div>
+                <div style="width: 33%; height: 100%; float: left">
+                    <center>
+                        <h2 style="margin-top: 0px">Model3<br>Deep Embedding</h2>
+                        <svg class='layout-scatter' id="scatter_container_de"></svg>
+                    </center>
+                </div>
+                <center><svg id='scatter_legend' style="margin-top: 20px"></svg></center>
+            </div>
+            <div id='layout-table'>
+                <table id="jqGrid"></table>
+                <div id="jqGridPager"></div>
+            </div>
+        </div>
+    </div>
+</body>
 
 <script type="text/javascript">
     var margin = {
@@ -37,22 +83,22 @@
     var kmeansScatterCanvas = d3.select("#scatter_container_km")
     var deepembeddingScatterCanvas = d3.select("#scatter_container_de")
 
+    var lda_hbar_json = {{ lda_hbar_json | tojson }};
+    var km_hbar_json = {{ km_hbar_json | tojson }};
+    var dec_hbar_json = {{ dec_hbar_json | tojson }};
+    var lda_scatter_json = {{ lda_scatter_json | tojson }};
+    var km_scatter_json = {{ km_scatter_json | tojson }};
+    var dec_scatter_json = {{ dec_scatter_json | tojson }};
+    var document_table_json = {{ document_table_json | tojson }};
+
     $(document).ready(function() {
-        var lda_hbar_json = {{ lda_hbar_json | tojson }};
-        var km_hbar_json = {{ km_hbar_json | tojson }};
-        var dec_hbar_json = {{ dec_hbar_json | tojson }};
-        var lda_scatter_json = {{ lda_scatter_json | tojson }};
-        var km_scatter_json = {{ km_scatter_json | tojson }};
-        var dec_scatter_json = {{ dec_scatter_json | tojson }};
-        var document_table_json = {{ document_table_json | tojson }};
-        
         hbarCanvas.attr("height", (100 * (lda_hbar_json.labels.length - 1)) + "px")
         topicCnt = lda_hbar_json.labels.length - 1
 
         topicSeq = 0
         lda_hbar_json.labels.forEach(l => {
             if (l != 'Default') {
-                initializeHBarChart(lda_hbar_json[l], data.max_width, topicSeq++, 'lda')
+                initializeHBarChart(lda_hbar_json[l], lda_hbar_json.max_width, topicSeq++, 'lda')
             }
         });
 
@@ -68,7 +114,7 @@
 
         tableData = document_table_json.rows
         initializeTable(tableData)
-    }
+    });
 
     function initializeHBarChart(barData, max_width, topicSeq, method) {
         subCanvas = hbarCanvas.append('svg')
@@ -370,51 +416,5 @@
     }
 
 </script>
-
-<body>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <div id='container'>
-        <div id='layout-header'>
-            <center>
-                <h1>Topic Modeling Results</h1>
-            </center>
-        </div>
-        <div id='layout-hbar'>
-            <center>
-                <h2>Choose Topic Cluster</h2>
-                <p id='hbar-description'>Topic Keywords based on LDA</p>
-            </center>
-            <div id="hbar_container"></div>
-        </div>
-        <div id='layout-output'>
-            <div id='layout-scatter'>
-                <div style="width: 33%; height: 100%; float: left">
-                    <center>
-                        <h2 style="margin-top: 0px">Model1<br>LDA</h2>
-                        <svg class='layout-scatter' id="scatter_container_lda"></svg>
-                    </center>
-                </div>
-                <div style="width: 33%; height: 100%; float: left">
-                    <center>
-                        <h2 style="margin-top: 0px">Model2<br>K-Means</h2>
-                        <svg class='layout-scatter' id="scatter_container_km"></svg>
-                    </center>
-                </div>
-                <div style="width: 33%; height: 100%; float: left">
-                    <center>
-                        <h2 style="margin-top: 0px">Model3<br>Deep Embedding</h2>
-                        <svg class='layout-scatter' id="scatter_container_de"></svg>
-                    </center>
-                </div>
-                <center><svg id='scatter_legend' style="margin-top: 20px"></svg></center>
-            </div>
-            <div id='layout-table'>
-                <table id="jqGrid"></table>
-                <div id="jqGridPager"></div>
-            </div>
-        </div>
-    </div>
-</body>
-
 
 </html>

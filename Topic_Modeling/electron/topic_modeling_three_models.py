@@ -33,11 +33,6 @@ from keras.layers import Input, Dense, Conv2D, MaxPooling2D, UpSampling2D, Flatt
 from keras.models import Model
 from keras.engine.topology import Layer, InputSpec
 
-
-np.random.seed(2018)
-random.seed(2018)
-nltk.download('wordnet')
-
 def run_topic_modeling(fname='mallet_top_sen', fext='tsv', target_column_name='Origin_Text', train_flag=True):
     # Declare Class
     class ClusteringLayer(Layer):
@@ -246,13 +241,17 @@ def run_topic_modeling(fname='mallet_top_sen', fext='tsv', target_column_name='O
 
     def write_json_to_file(path, json_str):
         pwd = os.getcwd()
-        for p in path.split('/')[:-1]:
+        pathList = path.split('/')
+        for p in pathList[:-1]:
             if p not in os.listdir() and p != '.':
                 os.mkdir(p)
             os.chdir('./%s' % p)
         os.chdir(pwd)
 
-        f = open(path, "w")
+        if '.' in pathList:
+            pathList = [p for p in pathList if p != '.']
+
+        f = open(os.path.join(*[os.getcwd()] + pathList), "w")
         f.write(json.dumps(json_str, ensure_ascii=False, indent='\t'))
         f.close()
 
@@ -281,22 +280,29 @@ def run_topic_modeling(fname='mallet_top_sen', fext='tsv', target_column_name='O
 
         write_json_to_file('./Visualization/res/%s/scatter_data.json' % method, scatter_json)
 
-        doc_result.to_csv('./data_output/%s.tsv' % method, sep='\t', index_label=False)
+        if 'data_output' not in os.listdir():
+            os.mkdir('data_output')
+
+        doc_result.to_csv(os.path.join(os.getcwd(), 'data_output', '%s.tsv' % method), sep='\t', index_label=False)
 
         return get_jsonp(scatter_json)
 
 
     print("Start")
 
+    np.random.seed(2018)
+    random.seed(2018)
+    nltk.download('wordnet')
+    
     ## Load Raw Data
     print("Load Data & Preprocessing")
 
     if fext == 'csv':
-        origin_data = pd.read_csv('./%s.%s' % (fname, fext), index_col=0).reset_index(drop=True)
+        origin_data = pd.read_csv(os.path.join(os.getcwd(), '%s.%s' % (fname, fext)), index_col=0).reset_index(drop=True)
     elif fext == 'tsv':
-        origin_data = pd.read_csv('./%s.%s' % (fname, fext), sep='\t', index_col=0).reset_index(drop=True)
+        origin_data = pd.read_csv(os.path.join(os.getcwd(), '%s.%s' % (fname, fext)), sep='\t', index_col=0).reset_index(drop=True)
     else:
-        origin_data = pd.read_csv('./mallet_top_sen.tsv', sep='\t', index_col=0).reset_index(drop=True)
+        origin_data = pd.read_csv(os.path.join(os.getcwd(), 'mallet_top_sen.tsv'), sep='\t', index_col=0).reset_index(drop=True)
 
     train_flag = False
 
@@ -429,9 +435,9 @@ def run_topic_modeling(fname='mallet_top_sen', fext='tsv', target_column_name='O
     ## Train Model
     if train_flag == True:
         autoencoder.fit(x, x, batch_size=batch_size, epochs=pretrain_epochs)
-        autoencoder.save_weights('./data_output/drug_ae_weights.h5')
+        autoencoder.save_weights(os.path.join(os.getcwd(), 'data_output', 'drug_ae_weights.h5'))
     else:
-        autoencoder.load_weights('./data_output/drug_ae_weights.h5')
+        autoencoder.load_weights(os.path.join(os.getcwd(), 'data_output', 'drug_ae_weights.h5'))
 
     ## Initialize cluster centers using k-means
     kmeans = KMeans(n_clusters=n_clusters, n_init=20)
@@ -478,9 +484,9 @@ def run_topic_modeling(fname='mallet_top_sen', fext='tsv', target_column_name='O
             loss = model.train_on_batch(x=x[idx], y=[p[idx], x[idx]])
             index = index + 1 if (index + 1) * batch_size <= x.shape[0] else 0
 
-        model.save_weights('./data_output/drug_DEC_model_final.h5')
+        model.save_weights(os.path.join(os.getcwd(), 'data_output', 'drug_DEC_model_final.h5'))
     else:
-        model.load_weights('./data_output/drug_DEC_model_final.h5')
+        model.load_weights(os.path.join(os.getcwd(), 'data_output', 'drug_DEC_model_final.h5'))
 
     q, _ = model.predict(x, verbose=0)
     p = target_distribution(q)
