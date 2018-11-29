@@ -15,6 +15,7 @@ Private_files
 cs231n_study/datasets
 Text_Mining/abcnews-date-text.csv
 Topic_Modeling/mallet_top_sen.tsv
+electron
 
 # Temp ignored files
 Data_Compression
