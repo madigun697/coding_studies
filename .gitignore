@@ -20,7 +20,7 @@ cs231n_study/datasets
 Text_Mining/abcnews-date-text.csv
 
 Topic_Modeling/electron
-#Topic_Modeling/colab_results
+Topic_Modeling/colab_results
 Topic_Modeling/mallet_top_sen.tsv
 Topic_Modeling/titles_condition_by_t.tsv
 Topic_Modeling/origin_text.tsv
