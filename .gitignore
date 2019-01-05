@@ -23,8 +23,7 @@ Topic_Modeling/electron
 Topic_Modeling/colab_results
 Topic_Modeling/mallet_top_sen.tsv
 Topic_Modeling/titles_condition_by_t.tsv
+Topic_Modeling/titles_condition_by_t_content_filter.tsv
 Topic_Modeling/origin_text.tsv
 Topic_Modeling/3d.png
 
-# Temp ignored files
-Data_Compression
