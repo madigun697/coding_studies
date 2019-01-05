@@ -6,6 +6,11 @@
 * [Aho-corasick Algorithm](./Pattern_Matching_Algorithms/aho_corasick/)
 * [Bake-Bird Algorithm](./Pattern_Matching_Algorithms/baker_bird/)
 
+## 2. [Data Compression](./Data_Compression)
+
+* LZ78
+* LZW
+
 ## 2. [Machine Learning Algorithm](./Machine_Learning_Algorithm)
 
 * Machine Learning Tutorials 
